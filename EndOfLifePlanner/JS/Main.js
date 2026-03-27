@@ -1,13 +1,12 @@
-$(document).ready(function() {
-    /* 
+
+/*  Begin Revision Comments */
         
-        Begin Revision Comments 
+/*  End Revision Comments */
+
+
     
-        End Revision Comments 
-    */
+/* Begin global varables */
     
-    /* Begin global varables */
+/* End global varables */
     
-    /* End global varables */
-    
-    }); /* $(document).ready(function() */
+    console.log("Ready to use HTML, CSS and Javascript");
