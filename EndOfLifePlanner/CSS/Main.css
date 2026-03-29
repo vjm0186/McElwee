@@ -2,57 +2,76 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, Arial, Helvetica, sans-serif;
+    font-size: 20px;
     background-color: #D9CFA9;
     color: #000000;
 
 }
-
-.container {
+/* Begin Header Styles */
+.containerHeader {
     display: flex;
     width: 90%;
-    height: 90%;
+    height: 17%;
+    margin: 15px;
+    font-size: 40px;    
+    margin: 15px;
     border-style: solid;
     border-color: #000000;
     border-width: 2px;
     border-radius: 10px;
-    margin: 15px;
-    
 }
 
-.Pic1 {
+.ImageHeaderLeft {
     width: 50%;
     height: 50%;
     color: red;
-    margin: 5px;;
+    padding: 5px;
+    margin: 5px;
+    text-align: left;
+    /*
     border-style: solid;
     border-color: red;
     border-width: 2px;
-    border-radius: 13px;
-    font-size: 40;
+    border-radius: 13px
+    */
 }
 
 .Pic2 {
     width: 50%;
     height: 50%;
     color: blue;
-    margin: 5px;;
+    margin: 5px;
+    text-align: center;
+    font-size: 40px;
+    /*
     border-style: solid;
     border-color: blue;
     border-width: 2px;
     border-radius: 13px;
-    font-size: 40;
+    
+    */
 }
 
-.Pic3 {
+.ImageHeaderRight {
     width: 50%;
     height: 50%;
     color: green;
-    margin: 5px;;
+    padding: 5px;
+    margin: 5px;
+    text-align: right;
+    /*
+    t
     border-style: solid;
     border-color: green;
     border-width: 2px;
     border-radius: 13px;
-    font-size: 40;
+    */
 }
+/* End Header Styles */
 
+/* Begin Responsive Styles */
+@media only screen and (min-width: 1000px) {
+    console-log("media only screen and min-width: 1000px");
+}
+/* End Responsive Styles */
