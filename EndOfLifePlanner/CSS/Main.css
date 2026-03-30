@@ -16,16 +16,21 @@
     margin: 15px;
     font-size: 40px;    
     margin: 15px;
+    /*
     border-style: solid;
     border-color: #000000;
     border-width: 2px;
     border-radius: 10px;
+    */
 }
 
 .ImageHeaderLeft {
-    width: 50%;
-    height: 50%;
-    color: red;
+    /* width: 50%;
+    height: 50%; */
+    max-width: 100%; 
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     padding: 5px;
     margin: 5px;
     text-align: left;
@@ -37,14 +42,15 @@
     */
 }
 
-.Pic2 {
+.Title {
     width: 50%;
-    height: 50%;
+    height: auto;
     color: blue;
     margin: 5px;
     text-align: center;
-    font-size: 40px;
+    font-size: clamp(1.8rem, calc(1.5vw + 1rem), 5rem);
     /*
+    font-size: 40px;
     border-style: solid;
     border-color: blue;
     border-width: 2px;
@@ -54,14 +60,16 @@
 }
 
 .ImageHeaderRight {
-    width: 50%;
-    height: 50%;
-    color: green;
+    /* width: 50%;
+    height: 50%; */
+    max-width: 100%; 
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     padding: 5px;
     margin: 5px;
     text-align: right;
     /*
-    t
     border-style: solid;
     border-color: green;
     border-width: 2px;
@@ -70,8 +78,25 @@
 }
 /* End Header Styles */
 
+/* Begin Message Styles */
+.Message {
+    margin: 60px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f31313;
+}
+/* End Message Styles */
+
 /* Begin Responsive Styles */
-@media only screen and (min-width: 1000px) {
-    console-log("media only screen and min-width: 1000px");
+@media (min-width: 300px) {
+    
+    .Message{
+        color: green;
+    }
+ @media (min-width: 883px) {
+        .Message{
+            color: red;
+        }
+    
 }
 /* End Responsive Styles */
