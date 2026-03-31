@@ -17,10 +17,9 @@ button {
     border: none;
     border-radius: 5px;
     text-align: center;
-    text-decoration: none;
+    align-items: center;
     outline: none;
     cursor: pointer;
-
 }
 /* Begin containerHeader Styles */
 .containerHeader {
@@ -93,9 +92,13 @@ button {
 
 /* Begin Message Styles */
 .Message {
-    margin: 15px;
-    font-size: 1rem;
+    margin-top: 50px;
+    margin-left: 58px;
+    font-size: 20px;
     font-weight: bold;
+    color: #f31313;
+}
+.Message:focus {
     color: #f31313;
 }
 /* End Message Styles */
@@ -108,28 +111,71 @@ button {
     height: 600px;
     margin: 15px;
     font-size: 12px;   
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    border-radius: 13px;
-
 }
 /* End containerButtons Styles */
 
-.divbtn {
+/* Begin Buttons Styles and Actions */
+.divButtons {
     display: inline-block;
-
+    border: none;
+    font-size: 23px;  
+    transition: .3s;
 }
 
 #btn01:focus {
-    border-style: solid;
-    border-color: #000000;
-    border-width: 2px;
-    border-radius: 13px;
-    text-align: center;
+    color: #000000;
+    font-size: 25px;  
     font-weight: bold;
+    text-align: center;
+    border-color: #000000;
+    border-top: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 13px;  
+    box-shadow: 0px 0px 50px 20px rgba(58, 57, 110);
+    animation: anim-shadow .3s forwards;
 }
 
+#btn01:focus+#btnGT01 {
+    visibility:hidden;
+}
+
+#btn02:focus {
+    color: #000000;
+    font-size: 25px;  
+    font-weight: bold;
+    text-align: center;
+    border-color: #000000;
+    border-top: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 13px;  
+    box-shadow: 0px 0px 50px 20px rgba(58, 57, 110);
+    animation: anim-shadow .3s forwards;
+}
+
+#btn02:focus+#btnGT02 {
+    visibility:hidden;
+}
+
+#btn03:focus {
+    color: #000000;
+    font-size: 25px;  
+    font-weight: bold;
+    text-align: center;
+    border-color: #000000;
+    border-top: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 13px;  
+    box-shadow: 0px 0px 50px 20px rgba(58, 57, 110);
+    animation: anim-shadow .3s forwards;
+}
+
+#btn03:focus+#btnGT03 {
+    visibility:hidden;
+}
+/* End Buttons Styles and Actions */
 
 /* Begin Responsive Styles */
 
