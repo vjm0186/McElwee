@@ -8,14 +8,27 @@
     color: #000000;
 
 }
-/* Begin Header Styles */
+
+button {
+    width: 160px;
+    height: 30px;
+    background-color: #D9CFA9;
+    font-weight: none;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+
+}
+/* Begin containerHeader Styles */
 .containerHeader {
     display: flex;
     width: 90%;
     height: 17%;
     margin: 15px;
     font-size: 40px;    
-    margin: 15px;
     /*
     border-style: solid;
     border-color: #000000;
@@ -48,7 +61,7 @@
     color: blue;
     margin: 5px;
     text-align: center;
-    font-size: clamp(1.8rem, calc(1.5vw + 1rem), 5rem);
+    font-size: 20px;
     /*
     font-size: 40px;
     border-style: solid;
@@ -76,27 +89,66 @@
     border-radius: 13px;
     */
 }
-/* End Header Styles */
+/* End containerHeader Styles */
 
 /* Begin Message Styles */
 .Message {
-    margin: 60px;
+    margin: 15px;
     font-size: 1rem;
     font-weight: bold;
     color: #f31313;
 }
 /* End Message Styles */
 
-/* Begin Responsive Styles */
-@media (min-width: 300px) {
-    
-    .Message{
-        color: green;
-    }
- @media (min-width: 883px) {
-        .Message{
-            color: red;
-        }
-    
+/* Begin containerButtons Styles */
+.containerButtons {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 600px;
+    margin: 15px;
+    font-size: 12px;   
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 13px;
+
 }
+/* End containerButtons Styles */
+
+.divbtn {
+    display: inline-block;
+
+}
+
+#btn01:focus {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+    border-radius: 13px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Begin Responsive Styles */
+
+/* Begin Mobile (390 x 844) Responsive Styles */
+/* When the page is less than 570 pixels apply these rules */
+ @media (max-width: 570px) {
+
+    .ImageHeaderLeft {
+        margin-left: -15px;
+    }
+    .Title {
+        font-size: 20px;    
+    }
+
+    .ImageHeaderRight {
+        margin-left: -12px;
+    }
+
+}
+/* End Mobile (390 x 844) Responsive Styles */ 
+
 /* End Responsive Styles */
