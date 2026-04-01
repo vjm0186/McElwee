@@ -6,7 +6,6 @@
     font-size: 20px;
     background-color: #D9CFA9;
     color: #000000;
-
 }
 
 button {
@@ -21,6 +20,7 @@ button {
     outline: none;
     cursor: pointer;
 }
+
 /* Begin containerHeader Styles */
 .containerHeader {
     display: flex;
@@ -119,11 +119,17 @@ button {
     display: inline-block;
     border: none;
     font-size: 23px;  
-    transition: .3s;
+    transition: .3s; 
 }
 
-#btn01:focus {
+.btnGT {
     color: #000000;
+    font-size: 22px;  
+}
+
+.buttons:focus {
+    color: #000000;
+    background-color: #90e738;
     font-size: 25px;  
     font-weight: bold;
     text-align: center;
@@ -133,49 +139,100 @@ button {
     border-style: solid;
     border-radius: 13px;  
     box-shadow: 0px 0px 50px 20px rgba(58, 57, 110);
-    animation: anim-shadow .3s forwards;
+    animation: anim-shadow .3s forwards;  
 }
 
-#btn01:focus+#btnGT01 {
-    visibility:hidden;
+#btn01:focus + #btnGT01 {
+    visibility: hidden;
+}
+
+#btn02:focus + #btnGT02 {
+    visibility: hidden;
 }
 
 #btn02:focus {
-    color: #000000;
-    font-size: 25px;  
-    font-weight: bold;
-    text-align: center;
-    border-color: #000000;
-    border-top: 2px;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 13px;  
-    box-shadow: 0px 0px 50px 20px rgba(58, 57, 110);
-    animation: anim-shadow .3s forwards;
+    width: 195px;
+    height: 50px;
 }
 
-#btn02:focus+#btnGT02 {
-    visibility:hidden;
+#btn03:focus + #btnGT03 {
+    visibility: hidden;
 }
 
-#btn03:focus {
-    color: #000000;
-    font-size: 25px;  
-    font-weight: bold;
-    text-align: center;
-    border-color: #000000;
-    border-top: 2px;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 13px;  
-    box-shadow: 0px 0px 50px 20px rgba(58, 57, 110);
-    animation: anim-shadow .3s forwards;
+#btn04:focus + #btnGT04 {
+    visibility: hidden;
 }
 
-#btn03:focus+#btnGT03 {
-    visibility:hidden;
+#btn05:focus + #btnGT05 {
+    visibility: hidden;
+}  
+
+#btn06:focus + #btnGT06 {
+    visibility: hidden;
+} 
+
+#btn07:focus + #btnGT07 {
+    visibility: hidden;
+} 
+
+#btn08:focus + #btnGT08 {
+    visibility: hidden;
+} 
+
+#btn09:focus + #btnGT09 {
+    visibility: hidden;
+} 
+
+#btn10:focus + #btnGT10 {
+    visibility: hidden;
+} 
+
+#btn11:focus + #btnGT11 {
+    visibility: hidden;
+} 
+
+#btn11:focus {
+    width: 195px;
+    height: 50px;
 }
+
+#btn12:focus + #btnGT12 {
+    visibility: hidden;
+} 
+
+#btn13:focus + #btnGT13 {
+    visibility: hidden;
+} 
+
+#btn14:focus + #btnGT14 {
+    visibility: hidden;
+} 
+
+#btn14:focus {
+    width: 195px;
+    height: 55px;
+}
+#btn15:focus + #btnGT15 {
+    visibility: hidden;
+} 
+
+
 /* End Buttons Styles and Actions */
+
+/* Begin containerRightside for Text Contents, Video and Audio data */
+.containerRightside {
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    top: 255px;
+    left: 240px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+    border-radius: 13px;
+    
+}
+/* End containerRightside for Text Contents, Video and Audio data */
 
 /* Begin Responsive Styles */
 
