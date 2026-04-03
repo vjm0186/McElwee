@@ -10,6 +10,7 @@
 button {
     width: 160px;
     height: 30px;
+    font-size: 20px;
     background-color: #D9CFA9;
     font-weight: none;
     border: none;
@@ -108,7 +109,7 @@ button {
     flex-direction: column;
     width: 200px;
     height: 600px;
-    margin: 15px;
+    margin: 15px;  
 }
 /* End containerButtons Styles */
 
@@ -116,7 +117,7 @@ button {
 .divButtons {
     display: inline-block;
     border: none;
-    transition: .3s; 
+    transition: .3s;
 }
 
 .btnGT {
@@ -145,10 +146,6 @@ button {
 
 #btn01:focus + #btnGT01 {
     visibility: hidden;
-}
-
-#btn01:focus + #AboutText {
-    visibility: visible;
 }
 
 #btn02:focus {
@@ -220,6 +217,7 @@ button {
 /* End Buttons Styles and Actions */
 
 /* Begin containerRightside for Text Contents, Video and Audio data */
+
 .containerRightside {
     position: absolute;
     width: 600px;
