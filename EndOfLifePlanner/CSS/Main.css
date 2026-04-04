@@ -263,7 +263,17 @@ button {
     visibility: hidden;
 }
 
- 
+ .containerDocuments {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    font-size: 20px; 
+    margin-bottom: 50px;
+    visibility: hidden;
+    font-size: 20px; 
+    margin-left: 50px;
+ }
+
 /* End containerRightside for Text Contents, Video and Audio data */
 
 /* Begin Responsive Styles */
