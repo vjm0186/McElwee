@@ -1,8 +1,5 @@
 About.txt
 
-Code JS to handle Visible and Hidden of rightside area
-during button click events.
-
 Date/Time/Weight/Place of Birth
 
 Date:      Saturday, February 21, 1948 

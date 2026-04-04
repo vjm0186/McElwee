@@ -144,7 +144,7 @@ button {
     visibility: hidden;
 }
 
-#btn01:focus + #btnGT01 {
+#btn02:focus + #btnGT02 {
     visibility: hidden;
 }
 
@@ -153,9 +153,16 @@ button {
     height: 50px;
 }
 
+
+
 #btn03:focus + #btnGT03 {
     visibility: hidden;
 }
+#btn03:active + #btnGT03 {
+    visibility: hidden;
+}
+
+
 
 #btn04:focus + #btnGT04 {
     visibility: hidden;
@@ -224,22 +231,40 @@ button {
     height: 500px;
     top: 250px;
     left: 215px;
-    border-style: solid;
-    border-color: #000000;
-    border-width: 2px;
-    border-radius: 13px;
 }
 
 .containerAbout {
-    color: #0909f3;
+    position: absolute;
+    width: 600px;
+    height: 500px;
     font-size: 20px; 
     margin-left: 50px;
     margin-bottom: 50px;
     visibility: hidden;
 }
+
+.containerPrepaidFuneral {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    font-size: 20px; 
+    margin-left: 50px;
+    margin-bottom: 50px;
+    visibility: hidden;
+}
+
+.containerEntombment {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    font-size: 20px; 
+    margin-left: 50px;
+    margin-bottom: 50px;
+    visibility: hidden;
+}
+
+ 
 /* End containerRightside for Text Contents, Video and Audio data */
-
-
 
 /* Begin Responsive Styles */
 
