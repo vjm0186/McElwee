@@ -267,11 +267,46 @@ button {
     position: absolute;
     width: 600px;
     height: 500px;
-    font-size: 20px; 
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     visibility: hidden;
     font-size: 20px; 
     margin-left: 50px;
+ }
+
+ .HeaderDocuments {
+    font-size: 30px; 
+    font-weight: bold;
+    /* margin-left: 50px; */
+ }
+
+ .containerFilingWill {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    margin-bottom: 25px;
+    visibility: hidden;
+    font-size: 20px; 
+    margin-left: 50px;
+ }
+
+ .containerBank {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    margin-bottom: 25px;
+    visibility: hidden;
+    font-size: 15px; 
+    margin-left: 15px;
+ }
+
+ .containerNotifications {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    margin-bottom: 25px;
+    visibility: hidden;
+    font-size: 20px; 
+    margin-left: 15px; 
  }
 
 /* End containerRightside for Text Contents, Video and Audio data */

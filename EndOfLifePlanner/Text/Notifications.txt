@@ -1,0 +1,22 @@
+Notifications.txt
+
+  <div class="containerNotifications" id="Notifications">
+   <h3>Notifications</h3>
+    <br>
+    <pre>
+A Will is a document which disposes of a person's property after his/her death it generally names a personal representative to administer the estate.
+
+The custodian of the deceased original Will must deposit the Will with the Clerk of the Circuit Court in the 
+county where the decedent was domiciled within 10 days after learning the person is deceased.
+
+The custodian must supply the person's death certificate with a person's Social Security number to the clerk
+upon deposit of the Well.
+
+You do not need an attorney to file the Will with the Clerk of the Circuit Court.  However you may want to 
+consult with an attorney before filing the Will.  The attorney should be able to tell whether or not Probate is 
+necessary based upon the wording of the Will and the Trust.
+
+Probate is necessary only when things are unclear as to how to make distributions.
+    </pre>
+  </div>
+

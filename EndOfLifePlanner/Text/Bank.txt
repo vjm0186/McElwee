@@ -1,0 +1,44 @@
+Bank.txt
+
+  <div class="containerBank" id="Bank">
+   <h3>Bank</h3>
+    <br>
+    <pre>
+Bank Name:  Wells Fargo
+
+Trust Name:  VINCENT J MCELWEE TR
+                      VINCENT J MCELWEE TTEE
+
+POD (Paid on death) Beneficiaries: MARK P MCELWEE 
+                                                          ROSEMARY K MCELWEE
+
+1.  Account Name/Number: Prime Checking  ...5222
+     Beneficiaries: Within Trust Name above
+    Activities :  Deposits:  Monthly Income SS and Pensions
+                       Withdraws :  Monthly Health/Rx Florida Blue Insurance
+
+2.  Account Name/Number: Fed Tax  ...8717
+     Beneficiaries: POD above
+    Activities :  Manual monthly online transfers from Prime Checking  ...5222
+                        Manual yearly transfers to Crown Classic account ...1450 below
+                        for Federal taxes and IRS pick-up
+
+3.  Account Name/Number: Crown Classic ...1450
+     Beneficiaries: POD above
+    Activities :  Debit card withdraws ...5265
+
+4.  Brokerage Roth IRA ...9741
+     Beneficiaries: Within Trust Name above
+
+5.  Brokerage Traditional IRA ...9743 
+     Beneficiaries: Within Trust Name above?
+
+6.  Brokerage ...9745 
+      Beneficiaries: Within Trust Name above
+
+Visa Signature Card ....4874
+Visa Debit Card ....5265
+Rewards ...8610
+    </pre>
+  </div>
+

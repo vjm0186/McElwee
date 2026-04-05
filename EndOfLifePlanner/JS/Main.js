@@ -9,12 +9,19 @@
 const button01 = document.getElementById("btn01");   
 const button02 = document.getElementById("btn02");  
 const button03 = document.getElementById("btn03"); 
-const button04 = document.getElementById("btn04");   
+const button04 = document.getElementById("btn04"); 
+const button05 = document.getElementById("btn05");    
+const button06 = document.getElementById("btn06"); 
+const button07 = document.getElementById("btn07"); 
 
 const AboutText = document.getElementById("AboutText");  
 const PrepaidFuneral = document.getElementById("PrepaidFuneral"); 
 const Entombment = document.getElementById("Entombment"); 
 const Documents = document.getElementById("Documents"); 
+const FilingWill = document.getElementById("FilingWill"); 
+const Bank = document.getElementById("Bank"); 
+const Notifications = document.getElementById("Notifications"); 
+
 
 /* End global varables */
 
@@ -34,14 +41,27 @@ button04.addEventListener("focus", DocumentsDisplay);
 button04.addEventListener("click", DocumentsDisplay); 
 button04.addEventListener("blur", DocumentsNoDisplay);
 
+button05.addEventListener("focus", FilingWillDisplay);
+button05.addEventListener("click", FilingWillDisplay); 
+button05.addEventListener("blur", FilingWillNoDisplay);
+
+button06.addEventListener("focus", BankDisplay);
+button06.addEventListener("click", BankDisplay); 
+button06.addEventListener("blur", BankNoDisplay);
+
+button07.addEventListener("focus", NotificationsDisplay);
+button07.addEventListener("click", NotificationsDisplay); 
+button07.addEventListener("blur", NotificationsNoDisplay);
 
 /* Begin About Functions */
 function aboutDisplay() {
   AboutText.style.visibility = "visible";
   PrepaidFuneral.style.visibility = "hidden";
-  PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
   Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
 };
 
 function aboutNoDisplay() {
@@ -49,6 +69,9 @@ function aboutNoDisplay() {
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
   Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
 };
 /* End About Functions */
 
@@ -58,6 +81,9 @@ function PrepaidFuneralDisplay() {
   PrepaidFuneral.style.visibility = "visible";
   Entombment.style.visibility = "hidden";
   Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
 };
 
 function PrepaidFuneralNoDisplay() {
@@ -65,6 +91,9 @@ function PrepaidFuneralNoDisplay() {
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
   Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
 };
 /* End Prepaid Funeral Functions */
 
@@ -74,6 +103,9 @@ function EntombmentDisplay() {
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "visible"; 
   Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
 };
 
 function EntombmentNoDisplay() {
@@ -81,15 +113,21 @@ function EntombmentNoDisplay() {
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
   Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
 };
 /* End Entombment Functions */
 
-/* Begin DocumentsFunctions */
+/* Begin Documents Functions */
 function DocumentsDisplay() {
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden"; 
   Documents.style.visibility = "visible";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
 };
 
 function DocumentsNoDisplay() {
@@ -97,5 +135,74 @@ function DocumentsNoDisplay() {
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
   Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
 };
-/* End Entombment Functions */
+/* End Documents Functions  */
+
+/* Begin FilingWill Functions */
+function FilingWillDisplay() {
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
+  Entombment.style.visibility = "hidden"; 
+  Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "visible";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
+};
+
+function FilingWillNoDisplay() {
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
+  Entombment.style.visibility = "hidden";
+  Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
+};
+/* End FilingWill Functions */
+
+/* Begin Bank Functions */
+function BankDisplay() {
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
+  Entombment.style.visibility = "hidden"; 
+  Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "visible";
+  Notifications.style.visibility = "hidden";
+};
+
+function BankNoDisplay() {
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
+  Entombment.style.visibility = "hidden";
+  Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
+};
+/* End Bank Functions */
+
+/* Begin Notifications Functions */
+function NotificationsDisplay() {
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
+  Entombment.style.visibility = "hidden"; 
+  Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "visible";
+};
+
+function NotificationsNoDisplay() {
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
+  Entombment.style.visibility = "hidden";
+  Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
+};
+/* End Notifications Functions */
