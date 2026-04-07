@@ -92,7 +92,7 @@ button {
 
 /* Begin Message Styles */
 .Message {
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 58px;
     font-size: 20px;
     font-weight: bold;
@@ -153,16 +153,12 @@ button {
     height: 50px;
 }
 
-
-
 #btn03:focus + #btnGT03 {
     visibility: hidden;
 }
 #btn03:active + #btnGT03 {
     visibility: hidden;
 }
-
-
 
 #btn04:focus + #btnGT04 {
     visibility: hidden;
@@ -304,6 +300,15 @@ button {
     width: 600px;
     height: 500px;
     margin-bottom: 25px;
+    visibility: hidden;
+    font-size: 20px; 
+    margin-left: 15px; 
+ }
+
+ .containerIncome {
+    position: absolute;
+    width: 600px;
+    height: 500px;
     visibility: hidden;
     font-size: 20px; 
     margin-left: 15px; 
