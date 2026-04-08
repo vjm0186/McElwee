@@ -14,6 +14,8 @@ const button05 = document.getElementById("btn05");
 const button06 = document.getElementById("btn06"); 
 const button07 = document.getElementById("btn07"); 
 const button08 = document.getElementById("btn08"); 
+const button09 = document.getElementById("btn09"); 
+const button10 = document.getElementById("btn10");
 
 const AboutText = document.getElementById("AboutText");  
 const PrepaidFuneral = document.getElementById("PrepaidFuneral"); 
@@ -23,6 +25,8 @@ const FilingWill = document.getElementById("FilingWill");
 const Bank = document.getElementById("Bank"); 
 const Notifications = document.getElementById("Notifications"); 
 const Income = document.getElementById("Income"); 
+const Expenses = document.getElementById("Expenses"); 
+const TaxPreparer = document.getElementById("TaxPreparer"); 
 
 
 /* End global varables */
@@ -59,6 +63,15 @@ button08.addEventListener("focus", IncomeDisplay);
 button08.addEventListener("click", IncomeDisplay); 
 button08.addEventListener("blur", IncomeNoDisplay);
 
+button09.addEventListener("focus", ExpensesDisplay);
+button09.addEventListener("click", ExpensesDisplay); 
+button09.addEventListener("blur", ExpensesNoDisplay);
+
+button10.addEventListener("focus", TaxPreparerDisplay);
+button10.addEventListener("click", TaxPreparerDisplay); 
+button10.addEventListener("blur", TaxPreparerNoDisplay);
+
+
 /* Begin About Functions */
 function aboutDisplay() {
   AboutText.style.visibility = "visible";
@@ -69,6 +82,8 @@ function aboutDisplay() {
   Bank.style.visibility = "hidden";
   Notifications.style.visibility = "hidden";
   Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
 };
 
 function aboutNoDisplay() {
@@ -80,6 +95,8 @@ function aboutNoDisplay() {
   Bank.style.visibility = "hidden";
   Notifications.style.visibility = "hidden";
   Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
 };
 /* End About Functions */
 
@@ -93,6 +110,8 @@ function PrepaidFuneralDisplay() {
   Bank.style.visibility = "hidden";
   Notifications.style.visibility = "hidden";
   Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
 };
 
 function PrepaidFuneralNoDisplay() {
@@ -104,6 +123,8 @@ function PrepaidFuneralNoDisplay() {
   Bank.style.visibility = "hidden";
   Notifications.style.visibility = "hidden";
   Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
 };
 /* End Prepaid Funeral Functions */
 
@@ -117,6 +138,8 @@ function EntombmentDisplay() {
   Bank.style.visibility = "hidden";
   Notifications.style.visibility = "hidden";
   Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
 };
 
 function EntombmentNoDisplay() {
@@ -128,6 +151,8 @@ function EntombmentNoDisplay() {
   Bank.style.visibility = "hidden";
   Notifications.style.visibility = "hidden";
   Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
 };
 /* End Entombment Functions */
 
@@ -141,6 +166,8 @@ function DocumentsDisplay() {
   Bank.style.visibility = "hidden";
   Notifications.style.visibility = "hidden";
   Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
 };
 
 function DocumentsNoDisplay() {
@@ -152,6 +179,8 @@ function DocumentsNoDisplay() {
   Bank.style.visibility = "hidden";
   Notifications.style.visibility = "hidden";
   Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
 };
 /* End Documents Functions  */
 
@@ -165,6 +194,8 @@ function FilingWillDisplay() {
   Bank.style.visibility = "hidden";
   Notifications.style.visibility = "hidden";
   Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
 };
 
 function FilingWillNoDisplay() {
@@ -176,6 +207,8 @@ function FilingWillNoDisplay() {
   Bank.style.visibility = "hidden";
   Notifications.style.visibility = "hidden";
   Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
 };
 /* End FilingWill Functions */
 
@@ -189,6 +222,8 @@ function BankDisplay() {
   Bank.style.visibility = "visible";
   Notifications.style.visibility = "hidden";
   Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
 };
 
 function BankNoDisplay() {
@@ -200,6 +235,8 @@ function BankNoDisplay() {
   Bank.style.visibility = "hidden";
   Notifications.style.visibility = "hidden";
   Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
 };
 /* End Bank Functions */
 
@@ -213,6 +250,8 @@ function NotificationsDisplay() {
   Bank.style.visibility = "hidden";
   Notifications.style.visibility = "visible";
   Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
 };
 
 function NotificationsNoDisplay() {
@@ -224,6 +263,8 @@ function NotificationsNoDisplay() {
   Bank.style.visibility = "hidden";
   Notifications.style.visibility = "hidden";
   Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
 };
 /* End Notifications Functions */
 
@@ -237,6 +278,8 @@ function IncomeDisplay() {
   Bank.style.visibility = "hidden";
   Notifications.style.visibility = "hidden";
   Income.style.visibility = "visible";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
 };
 
 function IncomeNoDisplay() {
@@ -248,5 +291,63 @@ function IncomeNoDisplay() {
   Bank.style.visibility = "hidden";
   Notifications.style.visibility = "hidden";
   Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
 };
 /* End Income Functions */
+
+/* Begin Expenses Functions */
+function ExpensesDisplay() {
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
+  Entombment.style.visibility = "hidden"; 
+  Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
+  Income.style.visibility = "hidden";
+  Expenses.style.visibility = "visible";
+  TaxPreparer.style.visibility = "hidden";
+};
+
+function ExpensesNoDisplay() {
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
+  Entombment.style.visibility = "hidden";
+  Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
+  Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
+};
+/* End Expenses Functions */
+
+/* Begin TaxPreparer Functions */
+function TaxPreparerDisplay() {
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
+  Entombment.style.visibility = "hidden"; 
+  Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
+  Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "visible";
+};
+
+function TaxPreparerNoDisplay() {
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
+  Entombment.style.visibility = "hidden";
+  Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
+  Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
+};
+/* End TaxPreparer Functions */

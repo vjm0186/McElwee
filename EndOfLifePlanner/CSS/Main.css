@@ -291,7 +291,7 @@ button {
     height: 500px;
     margin-bottom: 25px;
     visibility: hidden;
-    font-size: 15px; 
+    font-size: 20px; 
     margin-left: 15px;
  }
 
@@ -312,6 +312,24 @@ button {
     visibility: hidden;
     font-size: 20px; 
     margin-left: 15px; 
+ }
+
+ .containerExpenses {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    visibility: hidden;
+    font-size: 20px; 
+    margin-left: 15px; 
+ }
+
+ .containerTaxPreparer {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    visibility: hidden;
+    font-size: 23px; 
+    margin-left: 15px;  
  }
 
 /* End containerRightside for Text Contents, Video and Audio data */
