@@ -332,6 +332,33 @@ button {
     margin-left: 15px;  
  }
 
+ .containerEstateAttoney {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    visibility: hidden;
+    font-size: 23px; 
+    margin-left: 15px;   
+ }
+
+ .containerProbate {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    visibility: hidden;
+    font-size: 23px; 
+    margin-left: 15px; 
+ }
+
+ .containerProperty {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    visibility: hidden;
+    font-size: 23px; 
+    margin-left: 15px;  
+ }
+
 /* End containerRightside for Text Contents, Video and Audio data */
 
 /* Begin Responsive Styles */
