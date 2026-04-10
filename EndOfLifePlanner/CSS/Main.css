@@ -368,6 +368,23 @@ button {
     margin-left: 15px; 
 }
 
+.containerVideoAudio {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    visibility: hidden;
+    font-size: 23px; 
+    margin-left: 15px;   
+}
+
+.containerExit {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    visibility: hidden;
+    font-size: 23px; 
+    margin-left: 15px; 
+}
 /* End containerRightside for Text Contents, Video and Audio data */
 
 /* Begin Responsive Styles */

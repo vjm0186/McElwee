@@ -3,7 +3,6 @@
         
 /*  End Revision Comments */
 
-  
 /* Begin global varables */
 
 const button01 = document.getElementById("btn01");   
@@ -20,6 +19,8 @@ const button11 = document.getElementById("btn11");
 const button12 = document.getElementById("btn12");
 const button13 = document.getElementById("btn13");
 const button14 = document.getElementById("btn14");
+const button15 = document.getElementById("btn15");
+const button16 = document.getElementById("btn16");
 
 const AboutText = document.getElementById("AboutText");  
 const PrepaidFuneral = document.getElementById("PrepaidFuneral"); 
@@ -34,7 +35,9 @@ const TaxPreparer = document.getElementById("TaxPreparer");
 const EstateAttoney = document.getElementById("EstateAttoney"); 
 const Probate = document.getElementById("Probate"); 
 const Property = document.getElementById("Property"); 
-
+const Security = document.getElementById("Security"); 
+const VideoAudio = document.getElementById("VideoAudio"); 
+const Exit = document.getElementById("Exit"); 
 
 /* End global varables */
 
@@ -94,6 +97,13 @@ button14.addEventListener("focus", SecurityDisplay);
 button14.addEventListener("click", SecurityDisplay); 
 button14.addEventListener("blur", SecurityNoDisplay);
 
+button15.addEventListener("focus", VideoAudioDisplay);
+button15.addEventListener("click", VideoAudioDisplay); 
+button15.addEventListener("blur", VideoAudioNoDisplay);
+
+button16.addEventListener("focus", ExitDisplay);
+button16.addEventListener("click", ExitDisplay); 
+button16.addEventListener("blur", ExitNoDisplay);
 
 /* Begin About Functions */
 function aboutDisplay() {
@@ -111,6 +121,8 @@ function aboutDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 
 function aboutNoDisplay() {
@@ -128,6 +140,8 @@ function aboutNoDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 /* End About Functions */
 
@@ -147,6 +161,8 @@ function PrepaidFuneralDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 
 function PrepaidFuneralNoDisplay() {
@@ -164,6 +180,8 @@ function PrepaidFuneralNoDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 /* End Prepaid Funeral Functions */
 
@@ -183,6 +201,8 @@ function EntombmentDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 
 function EntombmentNoDisplay() {
@@ -200,6 +220,8 @@ function EntombmentNoDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 /* End Entombment Functions */
 
@@ -219,6 +241,8 @@ function DocumentsDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 
 function DocumentsNoDisplay() {
@@ -236,6 +260,8 @@ function DocumentsNoDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 /* End Documents Functions  */
 
@@ -255,6 +281,8 @@ function FilingWillDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 
 function FilingWillNoDisplay() {
@@ -272,6 +300,8 @@ function FilingWillNoDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 /* End FilingWill Functions */
 
@@ -291,6 +321,8 @@ function BankDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 
 function BankNoDisplay() {
@@ -308,6 +340,8 @@ function BankNoDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 /* End Bank Functions */
 
@@ -327,6 +361,8 @@ function NotificationsDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 
 function NotificationsNoDisplay() {
@@ -344,6 +380,8 @@ function NotificationsNoDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 /* End Notifications Functions */
 
@@ -363,6 +401,8 @@ function IncomeDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 
 function IncomeNoDisplay() {
@@ -380,6 +420,8 @@ function IncomeNoDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 /* End Income Functions */
 
@@ -399,6 +441,8 @@ function ExpensesDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 
 function ExpensesNoDisplay() {
@@ -416,6 +460,8 @@ function ExpensesNoDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 /* End Expenses Functions */
 
@@ -435,6 +481,8 @@ function TaxPreparerDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 
 function TaxPreparerNoDisplay() {
@@ -452,6 +500,8 @@ function TaxPreparerNoDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 /* End TaxPreparer Functions */
 
@@ -471,6 +521,8 @@ function EstateAttoneyDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 
 function EstateAttoneyNoDisplay() {
@@ -488,6 +540,8 @@ function EstateAttoneyNoDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 /* End EstateAttoney Functions */
 
@@ -507,6 +561,8 @@ function ProbateDisplay() {
   Probate.style.visibility = "visible";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 
 function ProbateNoDisplay() {
@@ -526,6 +582,8 @@ function ProbateNoDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 /* End Probate Functions */
 
@@ -545,6 +603,8 @@ function PropertyDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "visible";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 
 function PropertyNoDisplay() {
@@ -564,6 +624,8 @@ function PropertyNoDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 /* End Property Functions */
 
@@ -583,6 +645,8 @@ function SecurityDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "visible";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
 
 function SecurityNoDisplay() {
@@ -602,5 +666,91 @@ function SecurityNoDisplay() {
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
 };
-/* End SecurityFunctions */
+/* End Security Functions */
+
+/* Begin VideoAudio Functions */
+function VideoAudioDisplay() {
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
+  Entombment.style.visibility = "hidden"; 
+  Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
+  Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
+  EstateAttoney.style.visibility = "hidden";
+  Probate.style.visibility = "hidden";
+  Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden"
+  VideoAudio.style.visibility = "visible";
+  Exit.style.visibility = "hidden";
+};
+
+function VideoAudioNoDisplay() {
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
+  Entombment.style.visibility = "hidden";
+  Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
+  Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
+  EstateAttoney.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
+  EstateAttoney.style.visibility = "hidden";
+  Probate.style.visibility = "hidden";
+  Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
+};
+/* End VideoAudio Functions */
+
+/* Begin Exit Functions */
+function ExitDisplay() {
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
+  Entombment.style.visibility = "hidden"; 
+  Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
+  Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
+  EstateAttoney.style.visibility = "hidden";
+  Probate.style.visibility = "hidden";
+  Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden"
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "visible";
+};
+
+function ExitNoDisplay() {
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
+  Entombment.style.visibility = "hidden";
+  Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
+  Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
+  EstateAttoney.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
+  EstateAttoney.style.visibility = "hidden";
+  Probate.style.visibility = "hidden";
+  Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
+  Exit.style.visibility = "hidden";
+};
+/* End Exit Functions */
