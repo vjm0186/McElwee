@@ -19,6 +19,7 @@ const button10 = document.getElementById("btn10");
 const button11 = document.getElementById("btn11");
 const button12 = document.getElementById("btn12");
 const button13 = document.getElementById("btn13");
+const button14 = document.getElementById("btn14");
 
 const AboutText = document.getElementById("AboutText");  
 const PrepaidFuneral = document.getElementById("PrepaidFuneral"); 
@@ -89,6 +90,10 @@ button13.addEventListener("focus", PropertyDisplay);
 button13.addEventListener("click", PropertyDisplay); 
 button13.addEventListener("blur", PropertyNoDisplay);
 
+button14.addEventListener("focus", SecurityDisplay);
+button14.addEventListener("click", SecurityDisplay); 
+button14.addEventListener("blur", SecurityNoDisplay);
+
 
 /* Begin About Functions */
 function aboutDisplay() {
@@ -105,6 +110,7 @@ function aboutDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 
 function aboutNoDisplay() {
@@ -121,6 +127,7 @@ function aboutNoDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 /* End About Functions */
 
@@ -139,6 +146,7 @@ function PrepaidFuneralDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 
 function PrepaidFuneralNoDisplay() {
@@ -155,6 +163,7 @@ function PrepaidFuneralNoDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 /* End Prepaid Funeral Functions */
 
@@ -173,6 +182,7 @@ function EntombmentDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 
 function EntombmentNoDisplay() {
@@ -189,6 +199,7 @@ function EntombmentNoDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 /* End Entombment Functions */
 
@@ -207,6 +218,7 @@ function DocumentsDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 
 function DocumentsNoDisplay() {
@@ -223,6 +235,7 @@ function DocumentsNoDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 /* End Documents Functions  */
 
@@ -241,6 +254,7 @@ function FilingWillDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 
 function FilingWillNoDisplay() {
@@ -257,6 +271,7 @@ function FilingWillNoDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 /* End FilingWill Functions */
 
@@ -275,6 +290,7 @@ function BankDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 
 function BankNoDisplay() {
@@ -291,6 +307,7 @@ function BankNoDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 /* End Bank Functions */
 
@@ -309,6 +326,7 @@ function NotificationsDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 
 function NotificationsNoDisplay() {
@@ -325,6 +343,7 @@ function NotificationsNoDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 /* End Notifications Functions */
 
@@ -343,6 +362,7 @@ function IncomeDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 
 function IncomeNoDisplay() {
@@ -359,6 +379,7 @@ function IncomeNoDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 /* End Income Functions */
 
@@ -377,6 +398,7 @@ function ExpensesDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 
 function ExpensesNoDisplay() {
@@ -393,6 +415,7 @@ function ExpensesNoDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 /* End Expenses Functions */
 
@@ -411,6 +434,7 @@ function TaxPreparerDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 
 function TaxPreparerNoDisplay() {
@@ -427,6 +451,7 @@ function TaxPreparerNoDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 /* End TaxPreparer Functions */
 
@@ -445,6 +470,7 @@ function EstateAttoneyDisplay() {
   EstateAttoney.style.visibility = "visible";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 
 function EstateAttoneyNoDisplay() {
@@ -461,6 +487,7 @@ function EstateAttoneyNoDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 /* End EstateAttoney Functions */
 
@@ -479,6 +506,7 @@ function ProbateDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "visible";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 
 function ProbateNoDisplay() {
@@ -497,10 +525,11 @@ function ProbateNoDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
 /* End Probate Functions */
 
-/* Begin Probate Functions */
+/* Begin Property Functions */
 function PropertyDisplay() {
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
@@ -515,6 +544,7 @@ function PropertyDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "visible";
+  Security.style.visibility = "hidden";
 };
 
 function PropertyNoDisplay() {
@@ -533,5 +563,44 @@ function PropertyNoDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
 };
-/* End Probate Functions */
+/* End Property Functions */
+
+/* Begin Security Functions */
+function SecurityDisplay() {
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
+  Entombment.style.visibility = "hidden"; 
+  Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
+  Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
+  EstateAttoney.style.visibility = "hidden";
+  Probate.style.visibility = "hidden";
+  Property.style.visibility = "hidden";
+  Security.style.visibility = "visible";
+};
+
+function SecurityNoDisplay() {
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
+  Entombment.style.visibility = "hidden";
+  Documents.style.visibility = "hidden";
+  FilingWill.style.visibility = "hidden";
+  Bank.style.visibility = "hidden";
+  Notifications.style.visibility = "hidden";
+  Income.style.visibility = "hidden";
+  Expenses.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
+  EstateAttoney.style.visibility = "hidden";
+  TaxPreparer.style.visibility = "hidden";
+  EstateAttoney.style.visibility = "hidden";
+  Probate.style.visibility = "hidden";
+  Property.style.visibility = "hidden";
+  Security.style.visibility = "hidden";
+};
+/* End SecurityFunctions */
