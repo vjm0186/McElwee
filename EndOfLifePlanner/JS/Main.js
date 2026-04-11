@@ -4,6 +4,7 @@
 /*  End Revision Comments */
 
 /* Begin global varables */
+/* const ExitConfirm = false; */
 
 const button01 = document.getElementById("btn01");   
 const button02 = document.getElementById("btn02");  
@@ -99,7 +100,7 @@ button14.addEventListener("blur", SecurityNoDisplay);
 
 button15.addEventListener("focus", VideoAudioDisplay);
 button15.addEventListener("click", VideoAudioDisplay); 
-button15.addEventListener("blur", VideoAudioNoDisplay);
+/* button15.addEventListener("blur", VideoAudioNoDisplay); */
 
 button16.addEventListener("focus", ExitDisplay);
 button16.addEventListener("click", ExitDisplay); 
@@ -731,6 +732,35 @@ function ExitDisplay() {
   Security.style.visibility = "hidden"
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "visible";
+
+  /*
+  Can not run the confirm and window.close()
+  due to Browser security. Instead just do a
+  window.close(). 
+
+  Browser security will see the confirm pop-up window
+  and can not a window.close() for windows that weren’t 
+  opened by your script.
+
+  ExitConfirm = confirm("Are you sure you want to Exit?");
+  console.log("ExitConfirm = " + ExitConfirm);
+  if(ExitConfirm) {
+    window.close();
+  };
+  
+
+  var ExitConfirm = confirm("Are you sure you want to Exit?");
+  console.log("Before if ExitConfirm = " + ExitConfirm);
+
+  var w = window.open('Index.html', '_blank');
+  if(ExitConfirm == true) {
+    console.log("if true ExitConfirm = " + ExitConfirm);
+    w.close();
+    window.close();
+  }
+  */
+
+  window.close();
 };
 
 function ExitNoDisplay() {
@@ -752,5 +782,6 @@ function ExitNoDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+  
 };
 /* End Exit Functions */
