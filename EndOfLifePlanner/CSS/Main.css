@@ -21,6 +21,10 @@ button {
     cursor: pointer;
 }
 
+#btn15 {
+    opacity: 0;  
+}
+
 /* Begin containerHeader Styles */
 .containerHeader {
     display: flex;

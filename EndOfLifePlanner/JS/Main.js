@@ -6,7 +6,25 @@
 /* Begin global varables */
 /* const ExitConfirm = false; */
 
-const button01 = document.getElementById("btn01");   
+/* Begin set Opacity value to "0" for the "Video/Audio is Available" button */
+const AboutTextButton = document.getElementById('btn15');
+let AboutTextButtonOpacity = "0";
+AboutTextButtonOpacity = AboutTextButton.style.opacity = "0";
+
+/* Begin Test AboutTextButtonOpacity for the "Video/Audio is Available" button */
+/*
+if (AboutTextButtonOpacity == "0") {
+  console.log("1 AboutTextButtonOpacity No Video/Audio");
+} else
+{
+ console.log("2 AboutTextButtonOpacity Yes Video/Audio");
+}
+*/
+/* End Test AboutTextButtonOpacity for the "Video/Audio is Available" button */
+
+
+const button01 = document.getElementById("btn01");  
+const btnGT01 = document.getElementById("btnGT01");   
 const button02 = document.getElementById("btn02");  
 const button03 = document.getElementById("btn03"); 
 const button04 = document.getElementById("btn04"); 
@@ -21,6 +39,7 @@ const button12 = document.getElementById("btn12");
 const button13 = document.getElementById("btn13");
 const button14 = document.getElementById("btn14");
 const button15 = document.getElementById("btn15");
+const btnGT15 = document.getElementById("btnGT15");  
 const button16 = document.getElementById("btn16");
 
 const AboutText = document.getElementById("AboutText");  
@@ -100,6 +119,7 @@ button14.addEventListener("blur", SecurityNoDisplay);
 
 button15.addEventListener("focus", VideoAudioDisplay);
 button15.addEventListener("click", VideoAudioDisplay); 
+button15.addEventListener("blur", VideoAudioNoDisplay);
 /* button15.addEventListener("blur", VideoAudioNoDisplay); */
 
 button16.addEventListener("focus", ExitDisplay);
@@ -124,10 +144,44 @@ function aboutDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  button01.style.color = "#000000";
+  button01.style.background = "#90e738";
+  button01.style.fontSize = "20px";
+  button01.style.fontWeight ="bold";
+  button01.style.textAlign = "center";
+  button01.style.borderBlockColor = "#000000";
+  button01.style.borderTop = "2px";
+  button01.style.borderWidth = "1px";
+  button01.style.borderStyle = "solid";
+  button01.style.borderRadius = "13px";
+  button01.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+  button01.animation = "anim-shadow .3s forwards";
+  btnGT01.style.visibility = "visible";
+
+  AboutTextButtonOpacity = AboutTextButton.style.opacity = "1";
+
+  if (AboutTextButtonOpacity == "0") {
+    console.log("aboutDisplay - AboutTextButtonOpacity No Video/Audio");
+  } else
+  {
+   console.log("aboutDisplay - AboutTextButtonOpacity Yes Video/Audio");
+  }
 };
 
 function aboutNoDisplay() {
-  AboutText.style.visibility = "hidden";
+
+  console.log("Begin aboutNoDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
+
+  
+  if (AboutTextButtonOpacity == "0") {
+    AboutText.style.visibility = "hidden";
+    console.log("aboutNoDisplay - AboutTextButtonOpacity No Video/Audio");
+  } else
+  {
+   console.log("aboutNoDisplay - AboutTextButtonOpacity Yes Video/Audio");
+   AboutText.style.visibility = "visible";
+  }
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
   Documents.style.visibility = "hidden";
@@ -143,6 +197,18 @@ function aboutNoDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  /*
+  AboutTextButtonOpacity= AboutTextButton.style.opacity = "0";
+  
+  if (AboutTextButtonOpacity == "0") {
+    console.log("1 AboutTextButtonOpacity No Video/Audio");
+  } else
+  {
+   console.log("2 AboutTextButtonOpacity Yes Video/Audio");
+  }
+ */
+
 };
 /* End About Functions */
 
@@ -674,7 +740,9 @@ function SecurityNoDisplay() {
 
 /* Begin VideoAudio Functions */
 function VideoAudioDisplay() {
-  AboutText.style.visibility = "hidden";
+
+  console.log("Begin function VideoAudioDisplay");
+
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden"; 
   Documents.style.visibility = "hidden";
@@ -690,9 +758,40 @@ function VideoAudioDisplay() {
   Security.style.visibility = "hidden"
   VideoAudio.style.visibility = "visible";
   Exit.style.visibility = "hidden";
+
+  console.log("fun VideoAudioDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
+  if (AboutTextButtonOpacity == "0") {
+    console.log("fun VideoAudioDisplay - AboutTextButtonOpacity No Video/Audio");
+    AboutText.style.visibility = "hidden";
+    VideoAudio.style.visibility = "hidden";
+  } else
+  {
+   console.log("fun VideoAudioDisplay - AboutTextButtonOpacity Yes Video/Audio");
+   button01.style.color = "#000000";
+   button01.style.background = "#90e738";
+   button01.style.fontSize = "20px";
+   button01.style.fontWeight ="bold";
+   button01.style.textAlign = "center";
+   button01.style.borderBlockColor = "#000000";
+   button01.style.borderTop = "2px";
+   button01.style.borderWidth = "1px";
+   button01.style.borderStyle = "solid";
+   button01.style.borderRadius = "13px";
+   button01.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+   button01.animation = "anim-shadow .3s forwards";
+   btnGT01.style.visibility = "hidden";
+   btnGT15.style.visibility = "hidden";
+   AboutText.style.visibility = "visible";
+  }
+
+  AboutText.style.visibility = "visible";
+  /* alert("End the fun VideoAudioDisplay"); */
+  console.log("End function VideoAudioDisplay");
 };
 
 function VideoAudioNoDisplay() {
+  console.log("Begin fun VideoAudioNoDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
@@ -710,7 +809,32 @@ function VideoAudioNoDisplay() {
   Property.style.visibility = "hidden";
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
+  button15.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+
+  console.log("fun VideoAudioDisplay - AboutTextButtonOpacity Yes Video/Audio");
+
+  button01.style.color = "#000000";
+  button01.style.background = "#D9CFA9";
+  button01.style.fontSize = "20px";
+  button01.style.fontWeight = "500";
+  button01.style.textAlign = "center";
+  button01.style.border = "none";
+  button01.style.boxShadow = "none"
+  btnGT01.style.visibility = "visible";
+  AboutText.style.visibility = "visible";
+
+  console.log("fun VideoAudioNoDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
+  if (AboutTextButtonOpacity == "0") {
+    console.log("fun VideoAudioNoDisplay - AboutTextButtonOpacity No Video/Audio");
+    button15.style.visibility = "hidden";
+  } else
+    button15.style.visibility = "hidden";
+  {
+   console.log("End fun VideoAudioNoDisplay - AboutTextButtonOpacity Yes Video/Audio");
+  }
+  
 };
 /* End VideoAudio Functions */
 

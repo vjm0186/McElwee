@@ -1,0 +1,75 @@
+VideoAudio.txt
+
+Revision:  04/13/2026
+Start:        04/12/2026
+
+Issue...
+  .  Add/Remove styles to "About" button click events.
+
+  . "About" button click event is highlighted and the 
+    "Video/Audio is Available" button is displayed and
+    not highlighted.  A click event on the "Video/Autio is Available" 
+    button is also highlighted with the "About" button.
+    The rightside of the will contain the video play 
+    area. So far this good. but...
+
+    Problems...
+    Need to hide the "Video/Autio is Available" button when...
+    . Playing a video/audio.
+    . Upon selecting any button.
+    1. The "Video/Autio is Available" button should not
+       be displayed when the video/audio is played or
+       if another button is clicked.
+
+    2.  Also the "About" button remains highlighted when
+        another button is selected.
+    
+
+Logic...
+
+Note:  hidden is the coding word for "not active" and
+           available for selection.
+          However only the "Video/Audio is Available" 
+          button becomes displayed when there is a Video 
+          or Audio file available from one of the buttons selected.
+
+          With the exception of the "Video/Audio is Available"
+          button the rest of the buttons are shown without any 
+          highlighting and are available for selection.
+
+. Make the "Video/Audio is Available" button not displayed when loaded.
+
+/* Begin set Opacity value to "0" for the "Video/Audio is Available" button */
+const AboutTextButton = document.getElementById('btn15');
+let AboutTextButtonOpacity = "0";
+AboutTextButtonOpacity = AboutTextButton.style.opacity = "0";
+
+if (AboutTextButtonOpacity == "0") {
+  console.log("1 AboutTextButtonOpacity No Video/Audio");
+} else
+{
+ console.log("2 AboutTextButtonOpacity Yes Video/Audio");
+}
+/* End set Opacity value to "0" for the "Video/Audio is Available" button */
+
+. Use the "About" button to set the "Video/Audio is Available" to be active.
+. The "Video/Audio is Available" button as not displayed initially.
+
+. Trigger the "Video/Audio is Available" button is displayed when 
+  selecting a particular button having a corresponding Video or 
+  Audio file.
+
+. A click of the highlighted visible "Video/Audio is Available" 
+  button will display on the right-side of the screen...
+  . The "Video/Audio is Available" button will remain highlighted
+    and visible.
+  . At the top of the right-side of the screen, a description of the 
+    Video/Audio is shown.
+  . Below the description will be the video play area and its controls.
+  . By clicking the visible "Video/Audio is Available" button will 
+    make it not displayed and all the rest of the buttons hidden (displayed
+    and available for selection). The right-side of the screen will
+    become empty.
+  . Also, by clicking any of the hidden buttons (not active) will 
+    make the "Video/Audio is Available" button not displayed with
+    the exception of the button having Video or Audio file available.
