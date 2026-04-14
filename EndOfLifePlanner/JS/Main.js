@@ -41,6 +41,7 @@ const button14 = document.getElementById("btn14");
 const button15 = document.getElementById("btn15");
 const btnGT15 = document.getElementById("btnGT15");  
 const button16 = document.getElementById("btn16");
+const Rightside = document.getElementById("Rightside");
 
 const AboutText = document.getElementById("AboutText");  
 const PrepaidFuneral = document.getElementById("PrepaidFuneral"); 
@@ -61,11 +62,11 @@ const Exit = document.getElementById("Exit");
 
 /* End global varables */
 
-button01.addEventListener("focus", aboutDisplay);
+/* button01.addEventListener("focus", aboutDisplay); */
 button01.addEventListener("click", aboutDisplay); 
 button01.addEventListener("blur", aboutNoDisplay); 
 
-button02.addEventListener("focus", PrepaidFuneralDisplay);
+/* button02.addEventListener("focus", PrepaidFuneralDisplay); */
 button02.addEventListener("click", PrepaidFuneralDisplay); 
 button02.addEventListener("blur", PrepaidFuneralNoDisplay); 
 
@@ -117,7 +118,7 @@ button14.addEventListener("focus", SecurityDisplay);
 button14.addEventListener("click", SecurityDisplay); 
 button14.addEventListener("blur", SecurityNoDisplay);
 
-button15.addEventListener("focus", VideoAudioDisplay);
+/* button15.addEventListener("focus", VideoAudioDisplay); */
 button15.addEventListener("click", VideoAudioDisplay); 
 button15.addEventListener("blur", VideoAudioNoDisplay);
 /* button15.addEventListener("blur", VideoAudioNoDisplay); */
@@ -128,6 +129,8 @@ button16.addEventListener("blur", ExitNoDisplay);
 
 /* Begin About Functions */
 function aboutDisplay() {
+  console.log("Begin fun aboutDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
+
   AboutText.style.visibility = "visible";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
@@ -157,31 +160,29 @@ function aboutDisplay() {
   button01.style.borderRadius = "13px";
   button01.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
   button01.animation = "anim-shadow .3s forwards";
-  btnGT01.style.visibility = "visible";
+  btnGT01.style.visibility = "hidden";
 
+  AboutTextButton.style.opacity = "1";
   AboutTextButtonOpacity = AboutTextButton.style.opacity = "1";
 
-  if (AboutTextButtonOpacity == "0") {
-    console.log("aboutDisplay - AboutTextButtonOpacity No Video/Audio");
-  } else
-  {
-   console.log("aboutDisplay - AboutTextButtonOpacity Yes Video/Audio");
-  }
+  button15.style.visibility = "visible";
+  btnGT15.style.visibility = "visible";
+
+  console.log("End fun aboutDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
+
 };
 
 function aboutNoDisplay() {
 
   console.log("Begin aboutNoDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
 
-  
   if (AboutTextButtonOpacity == "0") {
     AboutText.style.visibility = "hidden";
-    console.log("aboutNoDisplay - AboutTextButtonOpacity No Video/Audio");
   } else
   {
-   console.log("aboutNoDisplay - AboutTextButtonOpacity Yes Video/Audio");
    AboutText.style.visibility = "visible";
   }
+
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
   Documents.style.visibility = "hidden";
@@ -197,6 +198,7 @@ function aboutNoDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+  btnGT01.style.visibility = "hidden";
 
   /*
   AboutTextButtonOpacity= AboutTextButton.style.opacity = "0";
@@ -208,12 +210,16 @@ function aboutNoDisplay() {
    console.log("2 AboutTextButtonOpacity Yes Video/Audio");
   }
  */
+  console.log("End aboutNoDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
 
 };
 /* End About Functions */
 
 /* Begin Prepaid Funeral Functions */
 function PrepaidFuneralDisplay() {
+
+  ResetButtonStyles();
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "visible";
   Entombment.style.visibility = "hidden";
@@ -233,6 +239,7 @@ function PrepaidFuneralDisplay() {
 };
 
 function PrepaidFuneralNoDisplay() {
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
@@ -254,6 +261,9 @@ function PrepaidFuneralNoDisplay() {
 
 /* Begin Entombment Functions */
 function EntombmentDisplay() {
+
+  ResetButtonStyles();
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "visible"; 
@@ -294,6 +304,9 @@ function EntombmentNoDisplay() {
 
 /* Begin Documents Functions */
 function DocumentsDisplay() {
+
+  ResetButtonStyles();
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden"; 
@@ -334,6 +347,9 @@ function DocumentsNoDisplay() {
 
 /* Begin FilingWill Functions */
 function FilingWillDisplay() {
+
+  ResetButtonStyles();
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden"; 
@@ -374,6 +390,9 @@ function FilingWillNoDisplay() {
 
 /* Begin Bank Functions */
 function BankDisplay() {
+
+  ResetButtonStyles();
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden"; 
@@ -414,6 +433,9 @@ function BankNoDisplay() {
 
 /* Begin Notifications Functions */
 function NotificationsDisplay() {
+
+  ResetButtonStyles();
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden"; 
@@ -454,6 +476,9 @@ function NotificationsNoDisplay() {
 
 /* Begin Income Functions */
 function IncomeDisplay() {
+
+  ResetButtonStyles();
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden"; 
@@ -494,6 +519,9 @@ function IncomeNoDisplay() {
 
 /* Begin Expenses Functions */
 function ExpensesDisplay() {
+
+  ResetButtonStyles();
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden"; 
@@ -534,6 +562,9 @@ function ExpensesNoDisplay() {
 
 /* Begin TaxPreparer Functions */
 function TaxPreparerDisplay() {
+
+  ResetButtonStyles();
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden"; 
@@ -574,6 +605,9 @@ function TaxPreparerNoDisplay() {
 
 /* Begin EstateAttoney Functions */
 function EstateAttoneyDisplay() {
+
+  ResetButtonStyles();
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden"; 
@@ -614,6 +648,9 @@ function EstateAttoneyNoDisplay() {
 
 /* Begin Probate Functions */
 function ProbateDisplay() {
+
+  ResetButtonStyles();
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden"; 
@@ -656,6 +693,9 @@ function ProbateNoDisplay() {
 
 /* Begin Property Functions */
 function PropertyDisplay() {
+
+  ResetButtonStyles();
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden"; 
@@ -698,6 +738,9 @@ function PropertyNoDisplay() {
 
 /* Begin Security Functions */
 function SecurityDisplay() {
+
+  ResetButtonStyles();
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden"; 
@@ -761,12 +804,10 @@ function VideoAudioDisplay() {
 
   console.log("fun VideoAudioDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
   if (AboutTextButtonOpacity == "0") {
-    console.log("fun VideoAudioDisplay - AboutTextButtonOpacity No Video/Audio");
     AboutText.style.visibility = "hidden";
     VideoAudio.style.visibility = "hidden";
   } else
   {
-   console.log("fun VideoAudioDisplay - AboutTextButtonOpacity Yes Video/Audio");
    button01.style.color = "#000000";
    button01.style.background = "#90e738";
    button01.style.fontSize = "20px";
@@ -781,10 +822,10 @@ function VideoAudioDisplay() {
    button01.animation = "anim-shadow .3s forwards";
    btnGT01.style.visibility = "hidden";
    btnGT15.style.visibility = "hidden";
-   AboutText.style.visibility = "visible";
+   AboutText.style.visibility = "hidden";
   }
 
-  AboutText.style.visibility = "visible";
+
   /* alert("End the fun VideoAudioDisplay"); */
   console.log("End function VideoAudioDisplay");
 };
@@ -792,47 +833,43 @@ function VideoAudioDisplay() {
 function VideoAudioNoDisplay() {
   console.log("Begin fun VideoAudioNoDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
 
-  AboutText.style.visibility = "hidden";
-  PrepaidFuneral.style.visibility = "hidden";
-  Entombment.style.visibility = "hidden";
-  Documents.style.visibility = "hidden";
-  FilingWill.style.visibility = "hidden";
-  Bank.style.visibility = "hidden";
-  Notifications.style.visibility = "hidden";
-  Income.style.visibility = "hidden";
-  Expenses.style.visibility = "hidden";
-  TaxPreparer.style.visibility = "hidden";
-  EstateAttoney.style.visibility = "hidden";
-  TaxPreparer.style.visibility = "hidden";
-  EstateAttoney.style.visibility = "hidden";
-  Probate.style.visibility = "hidden";
-  Property.style.visibility = "hidden";
-  Security.style.visibility = "hidden";
-  VideoAudio.style.visibility = "hidden";
-  button15.style.visibility = "hidden";
-  Exit.style.visibility = "hidden";
 
-
-  console.log("fun VideoAudioDisplay - AboutTextButtonOpacity Yes Video/Audio");
-
-  button01.style.color = "#000000";
-  button01.style.background = "#D9CFA9";
-  button01.style.fontSize = "20px";
-  button01.style.fontWeight = "500";
-  button01.style.textAlign = "center";
-  button01.style.border = "none";
-  button01.style.boxShadow = "none"
-  btnGT01.style.visibility = "visible";
-  AboutText.style.visibility = "visible";
-
-  console.log("fun VideoAudioNoDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
   if (AboutTextButtonOpacity == "0") {
-    console.log("fun VideoAudioNoDisplay - AboutTextButtonOpacity No Video/Audio");
+    button01.style.color = "#000000";
+    button01.style.background = "#D9CFA9";
+    button01.style.fontSize = "20px";
+    button01.style.fontWeight = "500";
+    button01.style.textAlign = "center";
+    button01.style.border = "none";
+    button01.style.boxShadow = "none"
+    btnGT01.style.visibility = "visible";
+    AboutText.style.visibility = "hidden";
     button15.style.visibility = "hidden";
+
+    AboutText.style.visibility = "hidden";
+    PrepaidFuneral.style.visibility = "hidden";
+    Entombment.style.visibility = "hidden";
+    Documents.style.visibility = "hidden";
+    FilingWill.style.visibility = "hidden";
+    Bank.style.visibility = "hidden";
+    Notifications.style.visibility = "hidden";
+    Income.style.visibility = "hidden";
+    Expenses.style.visibility = "hidden";
+    TaxPreparer.style.visibility = "hidden";
+    EstateAttoney.style.visibility = "hidden";
+    TaxPreparer.style.visibility = "hidden";
+    EstateAttoney.style.visibility = "hidden";
+    Probate.style.visibility = "hidden";
+    Property.style.visibility = "hidden";
+    Security.style.visibility = "hidden";
+    VideoAudio.style.visibility = "hidden";
+    button15.style.visibility = "hidden";
+    Exit.style.visibility = "hidden";
   } else
     button15.style.visibility = "hidden";
   {
-   console.log("End fun VideoAudioNoDisplay - AboutTextButtonOpacity Yes Video/Audio");
+
+   console.log("Begin fun VideoAudioNoDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
   }
   
 };
@@ -840,6 +877,9 @@ function VideoAudioNoDisplay() {
 
 /* Begin Exit Functions */
 function ExitDisplay() {
+
+  ResetButtonStyles();
+  
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden"; 
@@ -856,33 +896,6 @@ function ExitDisplay() {
   Security.style.visibility = "hidden"
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "visible";
-
-  /*
-  Can not run the confirm and window.close()
-  due to Browser security. Instead just do a
-  window.close(). 
-
-  Browser security will see the confirm pop-up window
-  and can not a window.close() for windows that weren’t 
-  opened by your script.
-
-  ExitConfirm = confirm("Are you sure you want to Exit?");
-  console.log("ExitConfirm = " + ExitConfirm);
-  if(ExitConfirm) {
-    window.close();
-  };
-  
-
-  var ExitConfirm = confirm("Are you sure you want to Exit?");
-  console.log("Before if ExitConfirm = " + ExitConfirm);
-
-  var w = window.open('Index.html', '_blank');
-  if(ExitConfirm == true) {
-    console.log("if true ExitConfirm = " + ExitConfirm);
-    w.close();
-    window.close();
-  }
-  */
 
   window.close();
 };
@@ -908,4 +921,25 @@ function ExitNoDisplay() {
   Exit.style.visibility = "hidden";
   
 };
+
+function ResetButtonStyles() {
+  console.log("Begin fun ResetButtonStyles - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
+
+
+  AboutTextButton.style.opacity = "0";
+  AboutTextButtonOpacity = "0";
+
+  button01.style.color = "#000000";
+  button01.style.background = "#D9CFA9";
+  button01.style.fontSize = "20px";
+  button01.style.fontWeight = "500";
+  button01.style.textAlign = "center";
+  button01.style.border = "none";
+  button01.style.boxShadow = "none";
+  btnGT01.style.visibility = "visible";
+  AboutText.style.visibility = "hidden";
+  button15.style.visibility = "hidden";
+
+  console.log("End fun ResetButtonStyles - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
+}
 /* End Exit Functions */

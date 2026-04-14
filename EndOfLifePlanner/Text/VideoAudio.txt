@@ -1,20 +1,38 @@
 VideoAudio.txt
 
-Revision:  04/13/2026
+Revision:  04/14/2026
 Start:        04/12/2026
 
-Issue...
+Change Video/Audio src using DOM innerHTML code 
+. New .mp4 and .mp3 and .mp4a
+
+No more Issues
+  . Where does the "Video/Audio is Available" visible?
+
+  const AboutTextButton = document.getElementById('btn15');
+let AboutTextButtonOpacity = "0";
+AboutTextButtonOpacity = AboutTextButton.style.opacity = "0";
+
+function aboutDisplay()
+AboutTextButtonOpacity = AboutTextButton.style.opacity = "1";
+
+  . Play video/audit clears area.
+
   .  Add/Remove styles to "About" button click events.
 
   . "About" button click event is highlighted and the 
     "Video/Audio is Available" button is displayed and
     not highlighted.  A click event on the "Video/Autio is Available" 
-    button is also highlighted with the "About" button.
-    The rightside of the will contain the video play 
-    area. So far this good. but...
+    button is highlighted along with the "About" button.
+    The rightside of the display will contain the video play 
+    area. So far this good, but...
 
     Problems...
     Need to hide the "Video/Autio is Available" button when...
+    . "About" button click event should hide the Greater than 
+       symbol ">" to the immediate right.
+    . The rightside of the display should be cleared when
+      a button loses focus.
     . Playing a video/audio.
     . Upon selecting any button.
     1. The "Video/Autio is Available" button should not
@@ -24,7 +42,6 @@ Issue...
     2.  Also the "About" button remains highlighted when
         another button is selected.
     
-
 Logic...
 
 Note:  hidden is the coding word for "not active" and
