@@ -1,12 +1,47 @@
 VideoAudio.txt
 
-Revision:  04/14/2026
-Start:        04/12/2026
+Revision:  04/15/2026
+Start:     04/12/2026
 
-Change Video/Audio src using DOM innerHTML code 
-. New .mp4 and .mp3 and .mp4a
+Continue coding for All buttons for Video/Audio.
+Referance "About"
 
-No more Issues
+Ubderstanding setting of a locatiom AboutTextButton button and
+the string variable AboutTextButtonOpacity Containing the value 
+of the opacity element...
+
+let AboutTextButton = document.getElementById('btn15');
+let AboutTextButtonOpacity = "0";
+AboutTextButtonOpacity = AboutTextButton.style.opacity = "0";
+
+AboutTextButton - Is the physical location on the screen and can make its
+                  style opacity element "1" (displayed) or "0" (Not displayed).
+
+AboutTextButtonOpacity - Is a string variable that can be set to match 
+                         the opacity element for a button.
+
+The AboutTextButtonOpacity string variable is initially set to "0"
+(Not displayed) for the "Video/Audio is Available" button.  Only when there
+is s video/audio file to be played Will this button be displayed, for exzmple...
+AboutTextButtonOpacity = AboutTextButton.style.opacity = "1";                   
+
+
+No Issues 04/15/2026...
+  . Change the Video/Audio src element for files extensions...
+    .mp4, .mp3 and .m4a
+  . Change the Video/Audio description...
+    let idDescriptionVideoAudio = document.getElementById("DescriptionVideoAudio");
+    dDescriptionVideoAudio.textContent = "  Discription: Welcome";
+
+  . If there is no button02.addEventListener("focus", PrepaidFuneralDisplay);
+    How does a click outside the button area erase the contents of the right 
+    side and resets the highlighted button.
+
+  . Change Video/Audio src using DOM innerHTML code for files extensions...
+    . New .mp4, .mp3 and .m4a
+
+
+-------------------------------------------------------------------------
   . Where does the "Video/Audio is Available" visible?
 
   const AboutTextButton = document.getElementById('btn15');

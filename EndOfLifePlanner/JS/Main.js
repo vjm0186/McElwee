@@ -7,11 +7,16 @@
 /* const ExitConfirm = false; */
 
 /* Begin set Opacity value to "0" for the "Video/Audio is Available" button */
-const AboutTextButton = document.getElementById('btn15');
+let AboutTextButton = document.getElementById('btn15');
 let AboutTextButtonOpacity = "0";
 AboutTextButtonOpacity = AboutTextButton.style.opacity = "0";
 
-/* Begin Test AboutTextButtonOpacity for the "Video/Audio is Available" button */
+let idDescriptionVideoAudio = document.getElementById("descriptionVideoAudio");
+idDescriptionVideoAudio.textContent = "  Discription: Welcome";
+
+let idelementsVideoAudio = document.getElementById("elementsVideoAudio");
+idelementsVideoAudio.src = "Video/Flag.mp4";
+
 /*
 if (AboutTextButtonOpacity == "0") {
   console.log("1 AboutTextButtonOpacity No Video/Audio");
@@ -63,12 +68,12 @@ const Exit = document.getElementById("Exit");
 /* End global varables */
 
 /* button01.addEventListener("focus", aboutDisplay); */
-button01.addEventListener("click", aboutDisplay); 
-button01.addEventListener("blur", aboutNoDisplay); 
+button01.addEventListener("click", clickaboutDisplay); 
+button01.addEventListener("blur", bluraboutNoDisplay); 
 
 /* button02.addEventListener("focus", PrepaidFuneralDisplay); */
 button02.addEventListener("click", PrepaidFuneralDisplay); 
-button02.addEventListener("blur", PrepaidFuneralNoDisplay); 
+button02.addEventListener("blur", blurPrepaidFuneralNoDisplay); 
 
 button03.addEventListener("focus", EntombmentDisplay);
 button03.addEventListener("click", EntombmentDisplay); 
@@ -119,8 +124,8 @@ button14.addEventListener("click", SecurityDisplay);
 button14.addEventListener("blur", SecurityNoDisplay);
 
 /* button15.addEventListener("focus", VideoAudioDisplay); */
-button15.addEventListener("click", VideoAudioDisplay); 
-button15.addEventListener("blur", VideoAudioNoDisplay);
+button15.addEventListener("click", clickVideoAudioDisplay); 
+button15.addEventListener("blur", blurVideoAudioNoDisplay);
 /* button15.addEventListener("blur", VideoAudioNoDisplay); */
 
 button16.addEventListener("focus", ExitDisplay);
@@ -128,8 +133,8 @@ button16.addEventListener("click", ExitDisplay);
 button16.addEventListener("blur", ExitNoDisplay);
 
 /* Begin About Functions */
-function aboutDisplay() {
-  console.log("Begin fun aboutDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
+function clickaboutDisplay() {
+  console.log("Begin clickaboutDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
 
   AboutText.style.visibility = "visible";
   PrepaidFuneral.style.visibility = "hidden";
@@ -168,13 +173,13 @@ function aboutDisplay() {
   button15.style.visibility = "visible";
   btnGT15.style.visibility = "visible";
 
-  console.log("End fun aboutDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
+  console.log("End clickaboutDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
 
 };
 
-function aboutNoDisplay() {
+function bluraboutNoDisplay() {
 
-  console.log("Begin aboutNoDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
+  console.log("Begin bluraboutNoDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
 
   if (AboutTextButtonOpacity == "0") {
     AboutText.style.visibility = "hidden";
@@ -200,17 +205,7 @@ function aboutNoDisplay() {
   Exit.style.visibility = "hidden";
   btnGT01.style.visibility = "hidden";
 
-  /*
-  AboutTextButtonOpacity= AboutTextButton.style.opacity = "0";
-  
-  if (AboutTextButtonOpacity == "0") {
-    console.log("1 AboutTextButtonOpacity No Video/Audio");
-  } else
-  {
-   console.log("2 AboutTextButtonOpacity Yes Video/Audio");
-  }
- */
-  console.log("End aboutNoDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
+  console.log("End bluraboutNoDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
 
 };
 /* End About Functions */
@@ -238,7 +233,9 @@ function PrepaidFuneralDisplay() {
   Exit.style.visibility = "hidden";
 };
 
-function PrepaidFuneralNoDisplay() {
+function blurPrepaidFuneralNoDisplay() {
+
+  console.log("Begin blurPrepaidFuneralNoDisplay");
 
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
@@ -256,6 +253,8 @@ function PrepaidFuneralNoDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  console.log("End blurPrepaidFuneralNoDisplay");
 };
 /* End Prepaid Funeral Functions */
 
@@ -782,9 +781,9 @@ function SecurityNoDisplay() {
 /* End Security Functions */
 
 /* Begin VideoAudio Functions */
-function VideoAudioDisplay() {
+function clickVideoAudioDisplay() {
 
-  console.log("Begin function VideoAudioDisplay");
+  console.log("Begin clickVideoAudioDisplay");
 
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden"; 
@@ -802,7 +801,8 @@ function VideoAudioDisplay() {
   VideoAudio.style.visibility = "visible";
   Exit.style.visibility = "hidden";
 
-  console.log("fun VideoAudioDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
+  console.log("clickVideoAudioDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
+
   if (AboutTextButtonOpacity == "0") {
     AboutText.style.visibility = "hidden";
     VideoAudio.style.visibility = "hidden";
@@ -825,14 +825,11 @@ function VideoAudioDisplay() {
    AboutText.style.visibility = "hidden";
   }
 
-
-  /* alert("End the fun VideoAudioDisplay"); */
-  console.log("End function VideoAudioDisplay");
+  console.log("End clickVideoAudioDisplay");
 };
 
-function VideoAudioNoDisplay() {
-  console.log("Begin fun VideoAudioNoDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
-
+function blurVideoAudioNoDisplay() {
+  console.log("Begin blurideoAudioNoDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
 
   if (AboutTextButtonOpacity == "0") {
     button01.style.color = "#000000";
@@ -869,7 +866,9 @@ function VideoAudioNoDisplay() {
     button15.style.visibility = "hidden";
   {
 
-   console.log("Begin fun VideoAudioNoDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
+   AboutTextButtonOpacity = AboutTextButton.style.opacity = "0";
+
+   console.log("End blurVideoAudioNoDisplay - AboutTextButtonOpacity = " + AboutTextButtonOpacity);
   }
   
 };
