@@ -385,6 +385,14 @@ button {
     border-radius: 10px; 
 }
 
+.headerVideoAudio {
+    margin-top: 1px;
+}
+
+#elementsVideoAudio {
+    margin-top: 60px;
+}
+
 .containerExit {
     position: absolute;
     width: 600px;

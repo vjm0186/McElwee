@@ -1,10 +1,33 @@
 VideoAudio.txt
 
-Revision:  04/15/2026
+Revision:  04/16/2026
 Start:     04/12/2026
 
 Continue coding for All buttons for Video/Audio.
 Referance "About"
+
+Issue 04/16/2026...
+PrepaidFuneral.style.visibility = "hidden";
+Debug... 
+    
+    PrepaidFuneral button...
+     . Does not show the Play area when the Video/Audio is cicked;
+       it still shows the text on the rightside.
+
+       If theVideo/Audio button is cicked again is show the play area.
+     . About button is styled.
+  
+
+     Why PrepaidFuneral button with a Video/Audio does not stay highlighted
+     with the Video/Audio button whenit is clicked?
+
+. Continue coding for All buttons for Video/Audio by
+  referancing the code for the "About" button,
+  . Remove...
+    .addEventListener("focus
+. For testing, each click and blur button added...
+    /* Begin Add Video/Audio */
+    /* End Add Video/Audio */
 
 Ubderstanding setting of a locatiom AboutTextButton button and
 the string variable AboutTextButtonOpacity Containing the value 
