@@ -1,13 +1,45 @@
 VideoAudio.txt
 
-Revision:  04/16/2026
+Revision:  04/17/2026
 Start:     04/12/2026
 
-Continue coding for All buttons for Video/Audio.
-Referance "About"
+Continue adding code for the rest of the buttons testing the
+"Video/Audio is Available" button.
 
-Issue 04/16/2026...
-PrepaidFuneral.style.visibility = "hidden";
+Fix 04/17/2026..
+. On first click of the "Video/Audio is Available" button
+  display the Video/Audio area.
+
+  Note: Forced the above by adding... 
+            clickVideoAudioDisplay();
+
+. for /* ????? */
+  Add/Remove code To incorporate the "Video/Audio is Available" button
+  for the rest of the buttons on the left-side on the screen.
+
+Standardize button click code for Video/Audio...
+. Make visible the "Video/Audio is Available" button
+  and the text on the right-side of the screen.
+. A click on the "Video/Audio is Available" button
+  will be highlighted and the right-side of the screen
+  this will display the Video/Audio play area.
+. Playing the Video/Audio will remove the 
+  "Video/Audio is Available" button from the left-side  
+  of the screen.
+. Clicking any button on the left-side of the screen
+  will present its text on the right-side of the 
+  screen and maybe the "Video/Audio is Available" button
+  if applicable.
+
+
+
+Issue 04/17/2026...
+Video/Audio - Prepaid Funeral is not working the same 
+as the About.
+. A click on the "Video/Audio is Available" button does
+  not replace the text on the right-side of the screen
+  with the Video/Audio play area.
+
 Debug... 
     
     PrepaidFuneral button...

@@ -16,19 +16,14 @@ VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "0";
 
 idDescriptionVideoAudio.textContent = "  Discription: Welcome";
 
-/*
-if ( VideoAudioTextButtonOpacity == "0") {
-  console.log("1  VideoAudioTextButtonOpacity No Video/Audio");
-} else
-{
- console.log("2  VideoAudioTextButtonOpacity Yes Video/Audio");
-}
-*/
-/* End Test  VideoAudioTextButtonOpacity for the "Video/Audio is Available" button */
+/* ????? - Add variable */
+let button01Active = false;
+let button02Active = false;
 
-
+/* ????? - Add 1 ID, e.g. btnGT01 */
 const button01 = document.getElementById("btn01");  
-const btnGT01 = document.getElementById("btnGT01");   
+const btnGT01 = document.getElementById("btnGT01");  
+
 const button02 = document.getElementById("btn02");  
 const btnGT02 = document.getElementById("btnGT02");  
 
@@ -68,6 +63,7 @@ const Exit = document.getElementById("Exit");
 
 /* End global varables */
 
+/* ????? - Remove focus events */
 /* button01.addEventListener("focus", aboutDisplay); */
 button01.addEventListener("click", clickaboutDisplay); 
 button01.addEventListener("blur", bluraboutNoDisplay); 
@@ -129,15 +125,19 @@ button15.addEventListener("click", clickVideoAudioDisplay);
 button15.addEventListener("blur", blurVideoAudioNoDisplay);
 /* button15.addEventListener("blur", VideoAudioNoDisplay); */
 
+/* ????? - Remove blur event */
 /* button16.addEventListener("focus", ExitDisplay); */
 button16.addEventListener("click", clickExitDisplay); 
 button16.addEventListener("blur", blurExitNoDisplay);
 
+/* ????? - Remove functions for focus and 1 blurt */
 /* Begin About Functions */
 function clickaboutDisplay() {
   console.log("Begin clickaboutDisplay -  VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
 
   ResetButtonStyles();
+
+  button01Active = true;
 
   AboutText.style.visibility = "visible";
   PrepaidFuneral.style.visibility = "hidden";
@@ -192,6 +192,7 @@ function bluraboutNoDisplay() {
   /* Begin Add Video/Audio */
   if (VideoAudioTextButtonOpacity == "0") {
     AboutText.style.visibility = "hidden";
+    button01Active = false;
   } else
   {
    AboutText.style.visibility = "visible";
@@ -214,6 +215,12 @@ function bluraboutNoDisplay() {
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
   btnGT01.style.visibility = "hidden";
+  btnGT15.style.visibility = "hidden";
+
+  /* ????? - Add  clickVideoAudioDisplay(); */
+  if (VideoAudioTextButtonOpacity == "1") {
+    clickVideoAudioDisplay();
+  };
 
   console.log("End bluraboutNoDisplay -  VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
 
@@ -226,6 +233,8 @@ function clickPrepaidFuneralDisplay() {
   console.log("Begin clickPrepaidFuneralDisplay -  VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
 
   ResetButtonStyles();
+
+  button02Active = true;
 
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "visible";
@@ -279,33 +288,17 @@ function blurPrepaidFuneralNoDisplay() {
 
   console.log("Begin blurPrepaidFuneralNoDisplay -  VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
   
-  /* ????? */
-  /* Begin Add Video/Audio */
-  /*
-  if(VideoAudioTextButtonOpacity == 1) {
-    PrepaidFuneral.style.visibility = "visible";
-  }
-  if(VideoAudioTextButtonOpacity == 0) {
+   /* Begin Add Video/Audio */
+   if (VideoAudioTextButtonOpacity == "0") {
     PrepaidFuneral.style.visibility = "hidden";
-  }
-  */
-
-  /*
-  if (VideoAudioTextButtonOpacity == 0) {
-    PrepaidFuneral.style.visibility = "hidden";
-    console.log("VideoAudioTextButtonOpacity = 0 " +  VideoAudioTextButtonOpacity);
+    button02Active = false;
   } else
   {
     PrepaidFuneral.style.visibility = "visible";
-    console.log("VideoAudioTextButtonOpacity  not = 0 " +  VideoAudioTextButtonOpacity);
   }
-  */
-
   /* End Add Video/Audio */
   
-
   AboutText.style.visibility = "hidden";
-  /* PrepaidFuneral.style.visibility = "hidden"; */
   Entombment.style.visibility = "hidden";
   Documents.style.visibility = "hidden";
   FilingWill.style.visibility = "hidden";
@@ -320,8 +313,14 @@ function blurPrepaidFuneralNoDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+  btnGT02.style.visibility = "hidden";
+  btnGT15.style.visibility = "hidden";
 
- 
+  /* ????? - Add  clickVideoAudioDisplay(); */
+  if (VideoAudioTextButtonOpacity == "1") {
+      clickVideoAudioDisplay();
+  };
+
   console.log("End blurPrepaidFuneralNoDisplay -  VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
 };
 /* End Prepaid Funeral Functions */
@@ -852,8 +851,15 @@ function SecurityNoDisplay() {
 function clickVideoAudioDisplay() {
 
   console.log("Begin clickVideoAudioDisplay -  VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("      clickVideoAudioDisplay -  button01Active              = " +   button01Active);
+  console.log("      clickVideoAudioDisplay -  button02Active              = " +   button02Active);
+
+ 
+  /* ResetButtonStyles(); */
 
   /* PrepaidFuneral.style.visibility = "hidden"; */
+  AboutText.style.visibility = "hidden";
+  PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden"; 
   Documents.style.visibility = "hidden";
   FilingWill.style.visibility = "hidden";
@@ -865,41 +871,79 @@ function clickVideoAudioDisplay() {
   EstateAttoney.style.visibility = "hidden";
   Probate.style.visibility = "hidden";
   Property.style.visibility = "hidden";
-  Security.style.visibility = "hidden"
-  VideoAudio.style.visibility = "visible";
+  Security.style.visibility = "hidden";
+  VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
 
   console.log("clickVideoAudioDisplay -  VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("clickVideoAudioDisplay -  button01Active              = " +   button01Active);
+  console.log("clickVideoAudioDisplay -  button02Active              = " +   button02Active);
 
-  if ( VideoAudioTextButtonOpacity == "0") {
+ 
+  /* ????? - copy button01Active && VideoAudioTextButtonOpacity == "0" and button01Active && VideoAudioTextButtonOpacity == "1" */
+  if (button01Active && VideoAudioTextButtonOpacity == "0") {
     AboutText.style.visibility = "hidden";
     VideoAudio.style.visibility = "hidden";
-  } else
-  {
-   button01.style.color = "#000000";
-   button01.style.background = "#90e738";
-   button01.style.fontSize = "20px";
-   button01.style.fontWeight ="bold";
-   button01.style.textAlign = "center";
-   button01.style.borderBlockColor = "#000000";
-   button01.style.borderTop = "2px";
-   button01.style.borderWidth = "1px";
-   button01.style.borderStyle = "solid";
-   button01.style.borderRadius = "13px";
-   button01.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
-   button01.animation = "anim-shadow .3s forwards";
-   btnGT01.style.visibility = "hidden";
-   btnGT15.style.visibility = "hidden";
-   AboutText.style.visibility = "hidden";
+  };
+
+  if (button01Active && VideoAudioTextButtonOpacity == "1") {
+    button01.style.color = "#000000";
+    button01.style.background = "#90e738";
+    button01.style.fontSize = "20px";
+    button01.style.fontWeight ="bold";
+    button01.style.textAlign = "center";
+    button01.style.borderBlockColor = "#000000";
+    button01.style.borderTop = "2px";
+    button01.style.borderWidth = "1px";
+    button01.style.borderStyle = "solid";
+    button01.style.borderRadius = "13px";
+    button01.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+    button01.animation = "anim-shadow .3s forwards";
+    btnGT01.style.visibility = "hidden";
+    btnGT15.style.visibility = "hidden";
+    AboutText.style.visibility = "hidden";
+    VideoAudio.style.visibility = "visible";
+    Exit.style.visibility = "hidden";
+  }
+
+  if (button02Active && VideoAudioTextButtonOpacity == "0") {
+    PrepaidFuneral.style.visibility = "hidden";
+    VideoAudio.style.visibility = "hidden";
+  };
+
+  if (button02Active && VideoAudioTextButtonOpacity == "1") {
+    
+    button02.style.color = "#000000";
+    button02.style.background = "#90e738";
+    button02.style.fontSize = "20px";
+    button02.style.fontWeight ="bold";
+    button02.style.textAlign = "center";
+    button02.style.borderBlockColor = "#000000";
+    button02.style.borderTop = "2px";
+    button02.style.borderWidth = "1px";
+    button02.style.borderStyle = "solid";
+    button02.style.borderRadius = "13px";
+    button02.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+    button02.animation = "anim-shadow .3s forwards";
+    btnGT02.style.visibility = "hidden";
+    btnGT15.style.visibility = "hidden";
+    PrepaidFuneral.style.visibility = "hidden";
+    VideoAudio.style.visibility = "visible";
+
+    console.log("button02Active              = " +   button02Active);
+    console.log("VideoAudioTextButtonOpacity = " +   VideoAudioTextButtonOpacity);
   }
 
   console.log("End clickVideoAudioDisplay -  VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("    clickVideoAudioDisplay -  button01Active              = " +   button01Active);
+  console.log("    clickVideoAudioDisplay -  button02Active              = " +   button02Active);
 };
 
 function blurVideoAudioNoDisplay() {
   console.log("Begin blurideoAudioNoDisplay -  VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
 
   if (VideoAudioTextButtonOpacity == "0") {
+    /*
     button01.style.color = "#000000";
     button01.style.background = "#D9CFA9";
     button01.style.fontSize = "20px";
@@ -910,6 +954,7 @@ function blurVideoAudioNoDisplay() {
     btnGT01.style.visibility = "visible";
     AboutText.style.visibility = "hidden";
     button15.style.visibility = "hidden";
+    */
 
     AboutText.style.visibility = "hidden";
     PrepaidFuneral.style.visibility = "hidden";
@@ -977,6 +1022,9 @@ function ResetButtonStyles() {
   button15.style.visibility = "hidden";
   /* End Video/Audio */
 
+  button01Active = false;
+  button02Active = false;
+
    VideoAudioTextButton.style.opacity = "0";
    VideoAudioTextButtonOpacity = "0";
 
@@ -1000,5 +1048,5 @@ function ResetButtonStyles() {
   btnGT02.style.visibility = "visible";
   PrepaidFuneral.style.visibility = "hidden";
   
-}
+};
 /* End Exit Functions */
