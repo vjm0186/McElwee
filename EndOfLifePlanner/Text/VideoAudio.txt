@@ -1,12 +1,31 @@
 VideoAudio.txt
 
-Revision:  04/17/2026
+Revision:  04/18/2026
 Start:     04/12/2026
 
 Continue adding code for the rest of the buttons testing the
-"Video/Audio is Available" button.
+"Video/Audio is Available" button for each button.
 
-Fix 04/17/2026..
+Fix 04/18/2026..
+. Prepaid Funeral button is active with the "Video/Audio is Available"
+  button displayed. A click on the "Video/Audio is Available" button 
+  does not display the Video/Audio file the rightside (the Text is still
+  showing on the right side).
+
+  If a click this done the second time on the "Video/Audio is Available"
+  button, the Video/Audio file is displayed and can be played, however the
+  About button is styled as a button bordered and with a green background.
+
+  Replicate what is being done with the About button.
+  Perhaps having a switch showing that the video was displayed with click
+  of the first click on the "Video/Audio is Available" button.
+
+--------------------------------------------------------------------------------
+. A blurEntombmentNoDisplay event is before a clickEntombmentDisplay?
+  When clicking the Entombment botton without playing aVideo/Audio file.
+. Prepaid Funeral button is not hidden when Entombment button is visible
+  and the Video/Audio button is clicked.
+
 . On first click of the "Video/Audio is Available" button
   display the Video/Audio area.
 
