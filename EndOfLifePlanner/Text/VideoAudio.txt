@@ -1,55 +1,16 @@
 VideoAudio.txt
 
-Revision:  04/18/2026
+Revision:  04/20/2026
 Start:     04/12/2026
 
-Continue adding code for the rest of the buttons testing the
-"Video/Audio is Available" button for each button.
+No issues
 
-Fix 04/18/2026..
-. Prepaid Funeral button is active with the "Video/Audio is Available"
-  button displayed. A click on the "Video/Audio is Available" button 
-  does not display the Video/Audio file the rightside (the Text is still
-  showing on the right side).
-
-  If a click this done the second time on the "Video/Audio is Available"
-  button, the Video/Audio file is displayed and can be played, however the
-  About button is styled as a button bordered and with a green background.
-
-  Replicate what is being done with the About button.
-  Perhaps having a switch showing that the video was displayed with click
-  of the first click on the "Video/Audio is Available" button.
-
---------------------------------------------------------------------------------
-. A blurEntombmentNoDisplay event is before a clickEntombmentDisplay?
-  When clicking the Entombment botton without playing aVideo/Audio file.
-. Prepaid Funeral button is not hidden when Entombment button is visible
-  and the Video/Audio button is clicked.
-
-. On first click of the "Video/Audio is Available" button
-  display the Video/Audio area.
-
-  Note: Forced the above by adding... 
-            clickVideoAudioDisplay();
-
-. for /* ????? */
-  Add/Remove code To incorporate the "Video/Audio is Available" button
-  for the rest of the buttons on the left-side on the screen.
-
-Standardize button click code for Video/Audio...
-. Make visible the "Video/Audio is Available" button
-  and the text on the right-side of the screen.
-. A click on the "Video/Audio is Available" button
-  will be highlighted and the right-side of the screen
-  this will display the Video/Audio play area.
-. Playing the Video/Audio will remove the 
-  "Video/Audio is Available" button from the left-side  
-  of the screen.
-. Clicking any button on the left-side of the screen
-  will present its text on the right-side of the 
-  screen and maybe the "Video/Audio is Available" button
-  if applicable.
-
+Resume coding with Filing Will button using Documents 
+as a reference. Need to modify....
+. function FilingWillDisplay()
+. function FilingWillNoDisplay()
+. function clickVideoAudioDisplay() 
+  if(button01Active)
 
 
 Issue 04/17/2026...

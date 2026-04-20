@@ -22,8 +22,13 @@ button {
 }
 
 #btn15 {
-    opacity: 0;  
+    visibility: hidden;  
 }
+
+#btnGT15 {
+    visibility: hidden;  
+}
+
 
 /* Begin containerHeader Styles */
 .containerHeader {
@@ -129,6 +134,7 @@ button {
     font-size: 25px;  
 }
 
+/*
 .buttons:focus {
     color: #000000;
     background-color: #90e738;
@@ -220,7 +226,7 @@ button {
 #btn16:focus + #btnGT16 {
     visibility: hidden;
 } 
-
+*/
 /* End Buttons Styles and Actions */
 
 /* Begin containerRightside for Text Contents, Video and Audio data */
