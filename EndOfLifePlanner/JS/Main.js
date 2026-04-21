@@ -4,9 +4,7 @@
 /*  End Revision Comments */
 
 /* Begin global varables */
-/* const ExitConfirm = false; */
 
-/* Begin set Opacity value to "0" for the "Video/Audio is Available" button */
 let VideoAudioTextButton = document.getElementById('btn15');
 let idDescriptionVideoAudio = document.getElementById("descriptionVideoAudio");
 let idelementsVideoAudio = document.getElementById("elementsVideoAudio");
@@ -557,7 +555,7 @@ function DocumentsDisplay() {
   button04.style.borderRadius = "13px";
   button04.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
   button04.animation = "anim-shadow .3s forwards";
-  btnGT04.style.visibility = "hidden";4
+  btnGT04.style.visibility = "hidden";
 
   /* Begin Add Video/Audio */
   VideoAudioTextButton.style.opacity = "1";
@@ -570,6 +568,7 @@ function DocumentsDisplay() {
    button15.style.visibility = "visible";
    btnGT15.style.visibility = "visible";
    /* End Add Video/Audio */
+
   };
  
   button01Active = false;
@@ -647,6 +646,12 @@ function DocumentsNoDisplay() {
 /* Begin FilingWill Functions */
 function FilingWillDisplay() {
 
+  console.log(" ");
+  console.log("Begin cickFilingWillDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+
   ResetButtonStyles();
 
   AboutText.style.visibility = "hidden";
@@ -665,9 +670,82 @@ function FilingWillDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  button05.style.color = "#000000";
+  button05.style.background = "#90e738";
+  button05.style.fontSize = "20px";
+  button05.style.fontWeight ="bold";
+  button05.style.textAlign = "center";
+  button05.style.borderBlockColor = "#000000";
+  button05.style.borderTop = "2px";
+  button05.style.borderWidth = "1px";
+  button05.style.borderStyle = "solid";
+  button05.style.borderRadius = "13px";
+  button05.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+  button05.animation = "anim-shadow .3s forwards";
+  btnGT05.style.visibility = "hidden";
+
+  /* Begin Add Video/Audio */
+  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+
+  if(VideoAudioTextButton.style.opacity == "1") {
+   idDescriptionVideoAudio.textContent = "  Filing Will Discription";
+   idelementsVideoAudio.src = "Video/Flag.mp4";
+
+   button15.style.visibility = "visible";
+   btnGT15.style.visibility = "visible";
+   /* End Add Video/Audio */
+
+  };
+ 
+  button01Active = false;
+  button02Active = false;
+  button03Active = false;
+  button04Active = false;
+  button05Active = false;
+  button06Active = false;
+  button07Active = false;
+  button08Active = false;
+  button09Active = false;
+  button10Active = false;
+  button11Active = false;
+  button12Active = false;
+  button13Active = false;
+  button14Active = false;
+  
+  if(VideoAudioTextButtonOpacity == "1") {
+    button05Active = true;
+  };
+
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button05Active              = " +  button05Active);
+
+  console.log(" ");
+  console.log("End cickFilingWillDisplay");
+
 };
 
 function FilingWillNoDisplay() {
+
+  console.log(" ");
+  console.log("Begin blurFilingWillDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button05Active              = " +  button05Active);
+
+  /* Begin Add Video/Audio */
+  if (VideoAudioTextButtonOpacity == "0") {
+    Documents.style.visibility = "hidden";
+  } else
+  {
+    Documents.style.visibility = "visible";
+  }
+  /* End Add Video/Audio */
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
@@ -684,11 +762,26 @@ function FilingWillNoDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button05Active              = " +  button05Active);
+
+  console.log(" ");
+  console.log("Begin blurFilingWillDisplay");
+
+
 };
 /* End FilingWill Functions */
 
 /* Begin Bank Functions */
 function BankDisplay() {
+
+  console.log(" ");
+  console.log("Begin cickBankDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
 
   ResetButtonStyles();
 
@@ -708,9 +801,81 @@ function BankDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  button06.style.color = "#000000";
+  button06.style.background = "#90e738";
+  button06.style.fontSize = "20px";
+  button06.style.fontWeight ="bold";
+  button06.style.textAlign = "center";
+  button06.style.borderBlockColor = "#000000";
+  button06.style.borderTop = "2px";
+  button06.style.borderWidth = "1px";
+  button06.style.borderStyle = "solid";
+  button06.style.borderRadius = "13px";
+  button06.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+  button06.animation = "anim-shadow .3s forwards";
+  btnGT06.style.visibility = "hidden";
+
+  /* Begin Add Video/Audio */
+  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+
+  if(VideoAudioTextButton.style.opacity == "1") {
+   idDescriptionVideoAudio.textContent = "  Bank Discription";
+   idelementsVideoAudio.src = "Video/Jeremia1-5.mp4";
+
+   button15.style.visibility = "visible";
+   btnGT15.style.visibility = "visible";
+   /* End Add Video/Audio */
+
+  };
+ 
+  button01Active = false;
+  button02Active = false;
+  button03Active = false;
+  button04Active = false;
+  button05Active = false;
+  button06Active = false;
+  button07Active = false;
+  button08Active = false;
+  button09Active = false;
+  button10Active = false;
+  button11Active = false;
+  button12Active = false;
+  button13Active = false;
+  button14Active = false;
+  
+  if(VideoAudioTextButtonOpacity == "1") {
+    button06Active = true;
+  };
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button06Active              = " +  button06Active);
+
+  console.log(" ");
+  console.log("End cickBankDisplay");
+
 };
 
 function BankNoDisplay() {
+
+  console.log(" ");
+  console.log("Begin blurBankNoDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button06Active              = " +  button06Active);
+
+  /* Begin Add Video/Audio */
+  if (VideoAudioTextButtonOpacity == "0") {
+    Documents.style.visibility = "hidden";
+  } else
+  {
+    Documents.style.visibility = "visible";
+  }
+  /* End Add Video/Audio */
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
@@ -727,11 +892,25 @@ function BankNoDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button06Active              = " +  button06Active);
+
+  console.log(" ");
+  console.log("End blurBankNoDisplay");
+
 };
 /* End Bank Functions */
 
 /* Begin Notifications Functions */
 function NotificationsDisplay() {
+
+  console.log(" ");
+  console.log("Begin cickNotificationsDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
 
   ResetButtonStyles();
 
@@ -751,9 +930,81 @@ function NotificationsDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  button07.style.color = "#000000";
+  button07.style.background = "#90e738";
+  button07.style.fontSize = "20px";
+  button07.style.fontWeight ="bold";
+  button07.style.textAlign = "center";
+  button07.style.borderBlockColor = "#000000";
+  button07.style.borderTop = "2px";
+  button07.style.borderWidth = "1px";
+  button07.style.borderStyle = "solid";
+  button07.style.borderRadius = "13px";
+  button07.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+  button07.animation = "anim-shadow .3s forwards";
+  btnGT07.style.visibility = "hidden";
+
+  /* Begin Add Video/Audio */
+  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+
+  if(VideoAudioTextButton.style.opacity == "1") {
+   idDescriptionVideoAudio.textContent = "  Notifications Discription";
+   idelementsVideoAudio.src = "Video/Flag.mp4";
+
+   button15.style.visibility = "visible";
+   btnGT15.style.visibility = "visible";
+   /* End Add Video/Audio */
+
+  };
+ 
+  button01Active = false;
+  button02Active = false;
+  button03Active = false;
+  button04Active = false;
+  button05Active = false;
+  button06Active = false;
+  button07Active = false;
+  button08Active = false;
+  button09Active = false;
+  button10Active = false;
+  button11Active = false;
+  button12Active = false;
+  button13Active = false;
+  button14Active = false;
+  
+  if(VideoAudioTextButtonOpacity == "1") {
+    button07Active = true;
+  };
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button07Active              = " +  button07Active);
+
+  console.log(" ");
+  console.log("End cickNotificationsDisplay");
+
 };
 
 function NotificationsNoDisplay() {
+
+  console.log(" ");
+  console.log("Begin blurNotificationsDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button07Active              = " +  button07Active);
+
+  /* Begin Add Video/Audio */
+  if (VideoAudioTextButtonOpacity == "0") {
+    Documents.style.visibility = "hidden";
+  } else
+  {
+    Documents.style.visibility = "visible";
+  }
+  /* End Add Video/Audio */
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
@@ -770,11 +1021,24 @@ function NotificationsNoDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button07Active              = " +  button07Active);
+
+  console.log(" ");
+  console.log("End blurNotificationsDisplay");  
 };
 /* End Notifications Functions */
 
 /* Begin Income Functions */
 function IncomeDisplay() {
+
+  console.log(" ");
+  console.log("Begin cickIncomeDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
 
   ResetButtonStyles();
 
@@ -794,9 +1058,81 @@ function IncomeDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  button08.style.color = "#000000";
+  button08.style.background = "#90e738";
+  button08.style.fontSize = "20px";
+  button08.style.fontWeight ="bold";
+  button08.style.textAlign = "center";
+  button08.style.borderBlockColor = "#000000";
+  button08.style.borderTop = "2px";
+  button08.style.borderWidth = "1px";
+  button08.style.borderStyle = "solid";
+  button08.style.borderRadius = "13px";
+  button08.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+  button08.animation = "anim-shadow .3s forwards";
+  btnGT08.style.visibility = "hidden";
+
+  /* Begin Add Video/Audio */
+  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+
+  if(VideoAudioTextButton.style.opacity == "1") {
+   idDescriptionVideoAudio.textContent = "  Income Discription";
+   idelementsVideoAudio.src = "Video/Jeremia1-5.mp4";
+
+   button15.style.visibility = "visible";
+   btnGT15.style.visibility = "visible";
+   /* End Add Video/Audio */
+
+  };
+ 
+  button01Active = false;
+  button02Active = false;
+  button03Active = false;
+  button04Active = false;
+  button05Active = false;
+  button06Active = false;
+  button07Active = false;
+  button08Active = false;
+  button09Active = false;
+  button10Active = false;
+  button11Active = false;
+  button12Active = false;
+  button13Active = false;
+  button14Active = false;
+  
+  if(VideoAudioTextButtonOpacity == "1") {
+    button08Active = true;
+  };
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button08Active              = " +  button08Active);
+
+  console.log(" ");
+  console.log("End cickIncomeDisplay");
+
 };
 
 function IncomeNoDisplay() {
+
+  console.log(" ");
+  console.log("Begin blurIncomeNoDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button08Active              = " +  button08Active);
+
+  /* Begin Add Video/Audio */
+  if (VideoAudioTextButtonOpacity == "0") {
+     Documents.style.visibility = "hidden";
+  } else
+  {
+    Documents.style.visibility = "visible";
+  }
+  /* End Add Video/Audio */
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
@@ -813,11 +1149,25 @@ function IncomeNoDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button08Active              = " +  button08Active);
+
+  console.log(" ");
+  console.log("End blurIncomeNoDisplay");
+
 };
 /* End Income Functions */
 
 /* Begin Expenses Functions */
 function ExpensesDisplay() {
+
+  console.log(" ");
+  console.log("Begin cickExpensesDisplay(");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);  
 
   ResetButtonStyles();
 
@@ -837,9 +1187,81 @@ function ExpensesDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  button09.style.color = "#000000";
+  button09.style.background = "#90e738";
+  button09.style.fontSize = "20px";
+  button09.style.fontWeight ="bold";
+  button09.style.textAlign = "center";
+  button09.style.borderBlockColor = "#000000";
+  button09.style.borderTop = "2px";
+  button09.style.borderWidth = "1px";
+  button09.style.borderStyle = "solid";
+  button09.style.borderRadius = "13px";
+  button09.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+  button09.animation = "anim-shadow .3s forwards";
+  btnGT09.style.visibility = "hidden";
+
+  /* Begin Add Video/Audio */
+  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+
+  if(VideoAudioTextButton.style.opacity == "1") {
+   idDescriptionVideoAudio.textContent = "  Expenses Discription";
+   idelementsVideoAudio.src = "Video/Flag.mp4";
+
+   button15.style.visibility = "visible";
+   btnGT15.style.visibility = "visible";
+   /* End Add Video/Audio */
+
+  };
+ 
+  button01Active = false;
+  button02Active = false;
+  button03Active = false;
+  button04Active = false;
+  button05Active = false;
+  button06Active = false;
+  button07Active = false;
+  button08Active = false;
+  button09Active = false;
+  button10Active = false;
+  button11Active = false;
+  button12Active = false;
+  button13Active = false;
+  button14Active = false;
+  
+  if(VideoAudioTextButtonOpacity == "1") {
+    button09Active = true;
+  };
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button08Active              = " +  button08Active);
+
+  console.log(" ");
+  console.log("End cickExpensesDisplay(");
+
 };
 
 function ExpensesNoDisplay() {
+
+  console.log(" ");
+  console.log("Begin blurExpensesNoDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button09Active              = " +  button09Active);
+
+  /* Begin Add Video/Audio */
+  if (VideoAudioTextButtonOpacity == "0") {
+     Documents.style.visibility = "hidden";
+  } else
+  {
+    Documents.style.visibility = "visible";
+  }
+  /* End Add Video/Audio */
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
@@ -856,11 +1278,25 @@ function ExpensesNoDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button09Active              = " +  button09Active);
+
+  console.log(" ");
+  console.log("End blurExpensesNoDisplay");  
+
 };
 /* End Expenses Functions */
 
 /* Begin TaxPreparer Functions */
 function TaxPreparerDisplay() {
+
+  console.log(" ");
+  console.log("Begin cickTaxPreparerDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);   
 
   ResetButtonStyles();
 
@@ -880,9 +1316,81 @@ function TaxPreparerDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  button10.style.color = "#000000";
+  button10.style.background = "#90e738";
+  button10.style.fontSize = "20px";
+  button10.style.fontWeight ="bold";
+  button10.style.textAlign = "center";
+  button10.style.borderBlockColor = "#000000";
+  button10.style.borderTop = "2px";
+  button10.style.borderWidth = "1px";
+  button10.style.borderStyle = "solid";
+  button10.style.borderRadius = "13px";
+  button10.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+  button10.animation = "anim-shadow .3s forwards";
+  btnGT10.style.visibility = "hidden";
+
+  /* Begin Add Video/Audio */
+  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+
+  if(VideoAudioTextButton.style.opacity == "1") {
+   idDescriptionVideoAudio.textContent = "  Tax Preparer Discription";
+   idelementsVideoAudio.src = "Video/Jeremia1-5.mp4";
+
+   button15.style.visibility = "visible";
+   btnGT15.style.visibility = "visible";
+   /* End Add Video/Audio */
+
+  };
+ 
+  button01Active = false;
+  button02Active = false;
+  button03Active = false;
+  button04Active = false;
+  button05Active = false;
+  button06Active = false;
+  button07Active = false;
+  button08Active = false;
+  button09Active = false;
+  button10Active = false;
+  button11Active = false;
+  button12Active = false;
+  button13Active = false;
+  button14Active = false;
+  
+  if(VideoAudioTextButtonOpacity == "1") {
+    button10Active = true;
+  };
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);  
+  console.log("button10Active              = " +  button10Active); 
+
+  console.log(" ");
+  console.log("End cickTaxPreparerDisplay");
+
 };
 
 function TaxPreparerNoDisplay() {
+
+  console.log(" ");
+  console.log("Begin blurTaxPreparerNoDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button10Active              = " +  button10Active);
+
+  /* Begin Add Video/Audio */
+  if (VideoAudioTextButtonOpacity == "0") {
+     Documents.style.visibility = "hidden";
+  } else
+  {
+    Documents.style.visibility = "visible";
+  }
+  /* End Add Video/Audio */
+  
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
@@ -899,11 +1407,25 @@ function TaxPreparerNoDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button10Active              = " +  button10Active);
+
+  console.log(" ");
+  console.log("End blurTaxPreparerNoDisplay(");
+
 };
 /* End TaxPreparer Functions */
 
 /* Begin EstateAttoney Functions */
 function EstateAttoneyDisplay() {
+
+  console.log(" ");
+  console.log("Begin cickEstateAttoneyDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);  
 
   ResetButtonStyles();
 
@@ -923,9 +1445,80 @@ function EstateAttoneyDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  button11.style.color = "#000000";
+  button11.style.background = "#90e738";
+  button11.style.fontSize = "20px";
+  button11.style.fontWeight ="bold";
+  button11.style.textAlign = "center";
+  button11.style.borderBlockColor = "#000000";
+  button11.style.borderTop = "2px";
+  button11.style.borderWidth = "1px";
+  button11.style.borderStyle = "solid";
+  button11.style.borderRadius = "13px";
+  button11.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+  button11.animation = "anim-shadow .3s forwards";
+  btnGT11.style.visibility = "hidden";
+
+  /* Begin Add Video/Audio */
+  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+
+  if(VideoAudioTextButton.style.opacity == "1") {
+   idDescriptionVideoAudio.textContent = "  Estate Attorney Discription";
+   idelementsVideoAudio.src = "Video/Flag.mp4";
+
+   button15.style.visibility = "visible";
+   btnGT15.style.visibility = "visible";
+   /* End Add Video/Audio */
+
+  };
+ 
+  button01Active = false;
+  button02Active = false;
+  button03Active = false;
+  button04Active = false;
+  button05Active = false;
+  button06Active = false;
+  button07Active = false;
+  button08Active = false;
+  button09Active = false;
+  button10Active = false;
+  button11Active = false;
+  button12Active = false;
+  button13Active = false;
+  button14Active = false;
+  
+  if(VideoAudioTextButtonOpacity == "1") {
+    button11Active = true;
+  }; 
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);  
+  console.log("button11Active              = " +  button11Active);
+
+  console.log(" ");
+  console.log("End cickEstateAttoneyDisplay");  
 };
 
 function EstateAttoneyNoDisplay() {
+
+  console.log(" ");
+  console.log("Begin blurEstateAttoneyNoDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button11Active              = " +  button11Active);
+
+  /* Begin Add Video/Audio */
+  if (VideoAudioTextButtonOpacity == "0") {
+     Documents.style.visibility = "hidden";
+  } else
+  {
+    Documents.style.visibility = "visible";
+  }
+  /* End Add Video/Audio */  
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
@@ -942,11 +1535,24 @@ function EstateAttoneyNoDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button11Active              = " +  button11Active);
+
+  console.log(" ");
+  console.log("End blurEstateAttoneyNoDisplay(");  
 };
 /* End EstateAttoney Functions */
 
 /* Begin Probate Functions */
 function ProbateDisplay() {
+
+  console.log(" ");
+  console.log("Begin cickProbateDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity); 
 
   ResetButtonStyles();
 
@@ -966,9 +1572,81 @@ function ProbateDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  button12.style.color = "#000000";
+  button12.style.background = "#90e738";
+  button12.style.fontSize = "20px";
+  button12.style.fontWeight ="bold";
+  button12.style.textAlign = "center";
+  button12.style.borderBlockColor = "#000000";
+  button12.style.borderTop = "2px";
+  button12.style.borderWidth = "1px";
+  button12.style.borderStyle = "solid";
+  button12.style.borderRadius = "13px";
+  button12.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+  button12.animation = "anim-shadow .3s forwards";
+  btnGT12.style.visibility = "hidden";
+
+  /* Begin Add Video/Audio */
+  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+
+  if(VideoAudioTextButton.style.opacity == "1") {
+   idDescriptionVideoAudio.textContent = "  Probate Discription";
+   idelementsVideoAudio.src = "Video/Jeremia1-5.mp4";
+
+   button15.style.visibility = "visible";
+   btnGT15.style.visibility = "visible";
+   /* End Add Video/Audio */
+
+  };
+ 
+  button01Active = false;
+  button02Active = false;
+  button03Active = false;
+  button04Active = false;
+  button05Active = false;
+  button06Active = false;
+  button07Active = false;
+  button08Active = false;
+  button09Active = false;
+  button10Active = false;
+  button11Active = false;
+  button12Active = false;
+  button13Active = false;
+  button14Active = false;
+  
+  if(VideoAudioTextButtonOpacity == "1") {
+    button12Active = true;
+  }; 
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);  
+  console.log("button12Active              = " +  button12Active);
+
+  console.log(" ");
+  console.log("End cickProbateDisplay");
+
 };
 
 function ProbateNoDisplay() {
+
+  console.log(" ");
+  console.log("Begin blurProbateNoDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button12Active              = " +  button12Active);
+
+  /* Begin Add Video/Audio */
+  if (VideoAudioTextButtonOpacity == "0") {
+     Documents.style.visibility = "hidden";
+  } else
+  {
+    Documents.style.visibility = "visible";
+  }
+  /* End Add Video/Audio */    
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
@@ -987,11 +1665,25 @@ function ProbateNoDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button12Active              = " +  button12Active);  
+
+  console.log(" ");
+  console.log("End blurProbateNoDisplay");
+
 };
 /* End Probate Functions */
 
 /* Begin Property Functions */
 function PropertyDisplay() {
+
+  console.log(" ");
+  console.log("Begin cickPropertyDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);   
 
   ResetButtonStyles();
 
@@ -1011,9 +1703,81 @@ function PropertyDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  button13.style.color = "#000000";
+  button13.style.background = "#90e738";
+  button13.style.fontSize = "20px";
+  button13.style.fontWeight ="bold";
+  button13.style.textAlign = "center";
+  button13.style.borderBlockColor = "#000000";
+  button13.style.borderTop = "2px";
+  button13.style.borderWidth = "1px";
+  button13.style.borderStyle = "solid";
+  button13.style.borderRadius = "13px";
+  button13.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+  button13.animation = "anim-shadow .3s forwards";
+  btnGT13.style.visibility = "hidden";
+
+  /* Begin Add Video/Audio */
+  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+
+  if(VideoAudioTextButton.style.opacity == "1") {
+   idDescriptionVideoAudio.textContent = "  Property Discription";
+   idelementsVideoAudio.src = "Video/Flag.mp4";
+
+   button15.style.visibility = "visible";
+   btnGT15.style.visibility = "visible";
+   /* End Add Video/Audio */
+
+  };
+ 
+  button01Active = false;
+  button02Active = false;
+  button03Active = false;
+  button04Active = false;
+  button05Active = false;
+  button06Active = false;
+  button07Active = false;
+  button08Active = false;
+  button09Active = false;
+  button10Active = false;
+  button11Active = false;
+  button12Active = false;
+  button13Active = false;
+  button14Active = false;
+  
+  if(VideoAudioTextButtonOpacity == "1") {
+    button13Active = true;
+  }; 
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);  
+  console.log("button13Active              = " +  button13Active);  
+
+  console.log(" ");
+  console.log("End cickPropertyDisplay");
+
 };
 
 function PropertyNoDisplay() {
+
+  console.log(" ");
+  console.log("Begin blurPropertyNoDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button13Active              = " +  button13Active);
+
+  /* Begin Add Video/Audio */
+  if (VideoAudioTextButtonOpacity == "0") {
+     Documents.style.visibility = "hidden";
+  } else
+  {
+    Documents.style.visibility = "visible";
+  }
+  /* End Add Video/Audio */ 
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
@@ -1032,11 +1796,25 @@ function PropertyNoDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button13Active              = " +  button13Active);  
+
+  console.log(" ");
+  console.log("End blurProbateNoDisplay");
+
 };
 /* End Property Functions */
 
 /* Begin Security Functions */
 function SecurityDisplay() {
+
+  console.log(" ");
+  console.log("Begin cickSecurityDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);    
 
   ResetButtonStyles();
 
@@ -1056,9 +1834,81 @@ function SecurityDisplay() {
   Security.style.visibility = "visible";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  button14.style.color = "#000000";
+  button14.style.background = "#90e738";
+  button14.style.fontSize = "20px";
+  button14.style.fontWeight ="bold";
+  button14.style.textAlign = "center";
+  button14.style.borderBlockColor = "#000000";
+  button14.style.borderTop = "2px";
+  button14.style.borderWidth = "1px";
+  button14.style.borderStyle = "solid";
+  button14.style.borderRadius = "13px";
+  button14.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+  button14.animation = "anim-shadow .3s forwards";
+  btnGT14.style.visibility = "hidden";
+
+  /* Begin Add Video/Audio */
+  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+
+  if(VideoAudioTextButton.style.opacity == "1") {
+   idDescriptionVideoAudio.textContent = "  Security Discription";
+   idelementsVideoAudio.src = "Video/Jeremia1-5.mp4";
+
+   button15.style.visibility = "visible";
+   btnGT15.style.visibility = "visible";
+   /* End Add Video/Audio */
+
+  };
+ 
+  button01Active = false;
+  button02Active = false;
+  button03Active = false;
+  button04Active = false;
+  button05Active = false;
+  button06Active = false;
+  button07Active = false;
+  button08Active = false;
+  button09Active = false;
+  button10Active = false;
+  button11Active = false;
+  button12Active = false;
+  button13Active = false;
+  button14Active = false;
+  
+  if(VideoAudioTextButtonOpacity == "1") {
+    button14Active = true;
+  }; 
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);  
+  console.log("button14Active              = " +  button14Active);  
+
+  console.log(" ");
+  console.log("End cickSecurityDisplay");  
+
 };
 
 function SecurityNoDisplay() {
+
+  console.log(" ");
+  console.log("Begin blurSecurityNoDisplay");
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button14Active              = " +  button14Active);
+
+  /* Begin Add Video/Audio */
+  if (VideoAudioTextButtonOpacity == "0") {
+     Documents.style.visibility = "hidden";
+  } else
+  {
+    Documents.style.visibility = "visible";
+  }
+  /* End Add Video/Audio */   
+
   AboutText.style.visibility = "hidden";
   PrepaidFuneral.style.visibility = "hidden";
   Entombment.style.visibility = "hidden";
@@ -1077,6 +1927,13 @@ function SecurityNoDisplay() {
   Security.style.visibility = "hidden";
   VideoAudio.style.visibility = "hidden";
   Exit.style.visibility = "hidden";
+
+  console.log(" ");
+  console.log("VideoAudioTextButtonOpacity = " +  VideoAudioTextButtonOpacity);
+  console.log("button14Active              = " +  button14Active);  
+
+  console.log(" ");
+  console.log("End blurSecurityNoDisplay");  
 };
 /* End Security Functions */
 
@@ -1196,6 +2053,176 @@ function clickVideoAudioDisplay() {
     button04.animation = "anim-shadow .3s forwards";
     btnGT04.style.visibility = "hidden";
     Documents.style.visibility = "hidden";
+   };
+
+   if(button05Active) {
+    button05.style.color = "#000000";
+    button05.style.background = "#90e738";
+    button05.style.fontSize = "20px";
+    button05.style.fontWeight ="bold";
+    button05.style.textAlign = "center";
+    button05.style.borderBlockColor = "#000000";
+    button05.style.borderTop = "2px";
+    button05.style.borderWidth = "1px";
+    button05.style.borderStyle = "solid";
+    button05.style.borderRadius = "13px";
+    button05.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+    button05.animation = "anim-shadow .3s forwards";
+    btnGT05.style.visibility = "hidden";
+    FilingWill.style.visibility = "hidden";
+   };
+
+   if(button06Active) {
+    button06.style.color = "#000000";
+    button06.style.background = "#90e738";
+    button06.style.fontSize = "20px";
+    button06.style.fontWeight ="bold";
+    button06.style.textAlign = "center";
+    button06.style.borderBlockColor = "#000000";
+    button06.style.borderTop = "2px";
+    button06.style.borderWidth = "1px";
+    button06.style.borderStyle = "solid";
+    button06.style.borderRadius = "13px";
+    button06.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+    button06.animation = "anim-shadow .3s forwards";
+    btnGT06.style.visibility = "hidden";
+    Bank.style.visibility = "hidden";
+   };
+   
+   if(button07Active) {
+    button07.style.color = "#000000";
+    button07.style.background = "#90e738";
+    button07.style.fontSize = "20px";
+    button07.style.fontWeight ="bold";
+    button07.style.textAlign = "center";
+    button07.style.borderBlockColor = "#000000";
+    button07.style.borderTop = "2px";
+    button07.style.borderWidth = "1px";
+    button07.style.borderStyle = "solid";
+    button07.style.borderRadius = "13px";
+    button07.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+    button07.animation = "anim-shadow .3s forwards";
+    btnGT07.style.visibility = "hidden";
+    Notifications.style.visibility = "hidden";
+   };
+   
+   if(button08Active) {
+    button08.style.color = "#000000";
+    button08.style.background = "#90e738";
+    button08.style.fontSize = "20px";
+    button08.style.fontWeight ="bold";
+    button08.style.textAlign = "center";
+    button08.style.borderBlockColor = "#000000";
+    button08.style.borderTop = "2px";
+    button08.style.borderWidth = "1px";
+    button08.style.borderStyle = "solid";
+    button08.style.borderRadius = "13px";
+    button08.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+    button08.animation = "anim-shadow .3s forwards";
+    btnGT08.style.visibility = "hidden";
+    Income.style.visibility = "hidden";
+   };
+   
+   if(button09Active) {
+    button09.style.color = "#000000";
+    button09.style.background = "#90e738";
+    button09.style.fontSize = "20px";
+    button09.style.fontWeight ="bold";
+    button09.style.textAlign = "center";
+    button09.style.borderBlockColor = "#000000";
+    button09.style.borderTop = "2px";
+    button09.style.borderWidth = "1px";
+    button09.style.borderStyle = "solid";
+    button09.style.borderRadius = "13px";
+    button09.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+    button09.animation = "anim-shadow .3s forwards";
+    btnGT09.style.visibility = "hidden";
+    Expenses.style.visibility = "hidden";
+   };
+   
+   if(button10Active) {
+    button10.style.color = "#000000";
+    button10.style.background = "#90e738";
+    button10.style.fontSize = "20px";
+    button10.style.fontWeight ="bold";
+    button10.style.textAlign = "center";
+    button10.style.borderBlockColor = "#000000";
+    button10.style.borderTop = "2px";
+    button10.style.borderWidth = "1px";
+    button10.style.borderStyle = "solid";
+    button10.style.borderRadius = "13px";
+    button10.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+    button10.animation = "anim-shadow .3s forwards";
+    btnGT10.style.visibility = "hidden";
+    TaxPreparer.style.visibility = "hidden";
+   };
+   
+   if(button11Active) {
+    button11.style.color = "#000000";
+    button11.style.background = "#90e738";
+    button11.style.fontSize = "20px";
+    button11.style.fontWeight ="bold";
+    button11.style.textAlign = "center";
+    button11.style.borderBlockColor = "#000000";
+    button11.style.borderTop = "2px";
+    button11.style.borderWidth = "1px";
+    button11.style.borderStyle = "solid";
+    button11.style.borderRadius = "13px";
+    button11.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+    button11.animation = "anim-shadow .3s forwards";
+    btnGT11.style.visibility = "hidden";
+    EstateAttoney.style.visibility = "hidden";
+   };
+   
+   if(button12Active) {
+    button12.style.color = "#000000";
+    button12.style.background = "#90e738";
+    button12.style.fontSize = "20px";
+    button12.style.fontWeight ="bold";
+    button12.style.textAlign = "center";
+    button12.style.borderBlockColor = "#000000";
+    button12.style.borderTop = "2px";
+    button12.style.borderWidth = "1px";
+    button12.style.borderStyle = "solid";
+    button12.style.borderRadius = "13px";
+    button12.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+    button12.animation = "anim-shadow .3s forwards";
+    btnGT12.style.visibility = "hidden";
+    Probate.style.visibility = "hidden";
+   };
+   
+   if(button13Active) {
+    button13.style.color = "#000000";
+    button13.style.background = "#90e738";
+    button13.style.fontSize = "20px";
+    button13.style.fontWeight ="bold";
+    button13.style.textAlign = "center";
+    button13.style.borderBlockColor = "#000000";
+    button13.style.borderTop = "2px";
+    button13.style.borderWidth = "1px";
+    button13.style.borderStyle = "solid";
+    button13.style.borderRadius = "13px";
+    button13.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+    button13.animation = "anim-shadow .3s forwards";
+    btnGT13.style.visibility = "hidden";
+    Property.style.visibility = "hidden";
+   };
+   
+   if(button14Active) {
+    button14.style.color = "#000000";
+    button14.style.background = "#90e738";
+    button14.style.fontSize = "20px";
+    button14.style.fontWeight ="bold";
+    button14.style.textAlign = "center";
+    button14.style.borderBlockColor = "#000000";
+    button14.style.borderTop = "2px";
+    button14.style.borderWidth = "1px";
+    button14.style.borderStyle = "solid";
+    button14.style.borderRadius = "13px";
+    button14.style.boxShadow = "0px 0px 50px 20px rgba(58, 57, 110)";
+    button14.animation = "anim-shadow .3s forwards";
+    btnGT14.style.visibility = "hidden";
+    Security.style.visibility = "hidden";
    };
 
   console.log(" ");

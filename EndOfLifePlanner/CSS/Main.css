@@ -37,12 +37,6 @@ button {
     height: 17%;
     margin: 15px;
     font-size: 40px;    
-    /*
-    border-style: solid;
-    border-color: #000000;
-    border-width: 2px;
-    border-radius: 10px;
-    */
 }
 
 .ImageHeaderLeft {
@@ -55,12 +49,6 @@ button {
     padding: 5px;
     margin: 5px;
     text-align: left;
-    /*
-    border-style: solid;
-    border-color: red;
-    border-width: 2px;
-    border-radius: 13px
-    */
 }
 
 .Title {
@@ -70,14 +58,6 @@ button {
     margin: 5px;
     text-align: center;
     font-size: 40px;
-    /*
-    font-size: 40px;
-    border-style: solid;
-    border-color: blue;
-    border-width: 2px;
-    border-radius: 13px;
-    
-    */
 }
 
 .ImageHeaderRight {
@@ -90,12 +70,6 @@ button {
     padding: 5px;
     margin: 5px;
     text-align: right;
-    /*
-    border-style: solid;
-    border-color: green;
-    border-width: 2px;
-    border-radius: 13px;
-    */
 }
 /* End containerHeader Styles */
 
@@ -134,99 +108,6 @@ button {
     font-size: 25px;  
 }
 
-/*
-.buttons:focus {
-    color: #000000;
-    background-color: #90e738;
-    font-size: 20px;  
-    font-weight: bold;
-    text-align: center;
-    border-color: #000000;
-    border-top: 2px;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 13px;  
-    box-shadow: 0px 0px 50px 20px rgba(58, 57, 110);
-    animation: anim-shadow .3s forwards;  
-}
-
-#btn01:focus + #btnGT01 {
-    visibility: hidden;
-}
-
-#btn02:focus + #btnGT02 {
-    visibility: hidden;
-}
-
-#btn02:focus {
-    width: 195px;
-    height: 50px;
-}
-
-#btn03:focus + #btnGT03 {
-    visibility: hidden;
-}
-#btn03:active + #btnGT03 {
-    visibility: hidden;
-}
-
-#btn04:focus + #btnGT04 {
-    visibility: hidden;
-}
-
-#btn05:focus + #btnGT05 {
-    visibility: hidden;
-}  
-
-#btn06:focus + #btnGT06 {
-    visibility: hidden;
-} 
-
-#btn07:focus + #btnGT07 {
-    visibility: hidden;
-} 
-
-#btn08:focus + #btnGT08 {
-    visibility: hidden;
-} 
-
-#btn09:focus + #btnGT09 {
-    visibility: hidden;
-} 
-
-#btn10:focus + #btnGT10 {
-    visibility: hidden;
-} 
-
-#btn11:focus + #btnGT11 {
-    visibility: hidden;
-} 
-
-#btn11:focus {
-    width: 195px;
-    height: 50px;
-}
-
-#btn12:focus + #btnGT12 {
-    visibility: hidden;
-} 
-
-#btn13:focus + #btnGT13 {
-    visibility: hidden;
-} 
-
-#btn14:focus + #btnGT14 {
-    visibility: hidden;
-} 
-
-#btn15:focus {
-    width: 195px;
-    height: 55px;
-}
-#btn16:focus + #btnGT16 {
-    visibility: hidden;
-} 
-*/
 /* End Buttons Styles and Actions */
 
 /* Begin containerRightside for Text Contents, Video and Audio data */
