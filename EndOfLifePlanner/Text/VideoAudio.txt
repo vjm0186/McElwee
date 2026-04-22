@@ -1,6 +1,6 @@
 VideoAudio.txt
 
-Revision:  04/21/2026
+Revision:  04/22/2026
 Start:     04/12/2026
 
 Test buttons and their video/Audio.
@@ -8,5 +8,6 @@ Review content in the HTML.
 Consider which button will need a Video/Audio file.
 Post to a web site.
 
-04/21/2026 - Coding completed
+04/22/2026 - Changed HTML text on some the buttons.
+04/21/2026 - Coding completed.
 
