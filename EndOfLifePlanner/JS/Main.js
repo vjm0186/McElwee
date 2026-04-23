@@ -195,7 +195,7 @@ function clickaboutDisplay() {
   VideoAudioTextButton.style.opacity = "1";
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
-  idDescriptionVideoAudio.textContent = "  About Discription";
+  idDescriptionVideoAudio.textContent = " Welcome to End Of Life Planner for Vincent J. McElwee";
   idelementsVideoAudio.src = "Video/Flag.mp4";
 
   button15.style.visibility = "visible";

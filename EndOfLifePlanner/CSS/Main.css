@@ -21,6 +21,10 @@ button {
     cursor: pointer;
 }
 
+#ProductionDate {
+    font-size: 18px;
+}
+
 #btn15 {
     visibility: hidden;  
 }
