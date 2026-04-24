@@ -6,13 +6,19 @@
 /* Begin global varables */
 
 let VideoAudioTextButton = document.getElementById('btn15');
-let idDescriptionVideoAudio = document.getElementById("descriptionVideoAudio");
+let idDescriptionVideoAudio1 = document.getElementById("descriptionVideoAudio1");
+let idDescriptionVideoAudio2 = document.getElementById("descriptionVideoAudio2");
+let idDescriptionVideoAudio3 = document.getElementById("descriptionVideoAudio3");
+let idDescriptionVideoAudio4 = document.getElementById("descriptionVideoAudio4");
 let idelementsVideoAudio = document.getElementById("elementsVideoAudio");
 let VideoAudioTextButtonOpacity = "0";
 
 VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "0";
 
-idDescriptionVideoAudio.textContent = "  Discription: Welcome";
+idDescriptionVideoAudio1.textContent = "  Discription: Line1";
+idDescriptionVideoAudio2.textContent = "  Discription: Line2";
+idDescriptionVideoAudio3.textContent = "  Discription: Line3";
+idDescriptionVideoAudio4.textContent = "  Discription: Line4";
 
 let button01Active = false;
 let button02Active = false;
@@ -195,7 +201,11 @@ function clickaboutDisplay() {
   VideoAudioTextButton.style.opacity = "1";
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
-  idDescriptionVideoAudio.textContent = " Welcome to End Of Life Planner for Vincent J. McElwee";
+  idDescriptionVideoAudio1.textContent = " Welcome to End Of Life Planner for Vincent J. McElwee";
+  idDescriptionVideoAudio2.textContent = " Welcome to End Of Life Planner for Vincent J. McElwee";
+  idDescriptionVideoAudio3.textContent = " Welcome to End Of Life Planner for Vincent J. McElwee";
+  idDescriptionVideoAudio4.textContent = " Welcome to End Of Life Planner for Vincent J. McElwee";
+
   idelementsVideoAudio.src = "Video/Flag.mp4";
 
   button15.style.visibility = "visible";
@@ -315,7 +325,11 @@ function clickPrepaidFuneralDisplay() {
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
   if(VideoAudioTextButton.style.opacity == "1") {
-   idDescriptionVideoAudio.textContent = "  Prepaid Funeral Discription";
+   idDescriptionVideoAudio1.textContent = "  Prepaid Funeral Discription";
+   idDescriptionVideoAudio2.textContent = "  Discription: Line2";
+   idDescriptionVideoAudio3.textContent = "  Discription: Line3";
+   idDescriptionVideoAudio4.textContent = "  Discription: Line4";
+   
    idelementsVideoAudio.src = "Video/Jeremia1-5.mp4";
 
    button15.style.visibility = "visible";
@@ -440,7 +454,11 @@ function EntombmentDisplay() {
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
   if(VideoAudioTextButton.style.opacity == "1") {
-   idDescriptionVideoAudio.textContent = "  Entombment Discription";
+   idDescriptionVideoAudio1.textContent = "  Entombment Discription";
+   idDescriptionVideoAudio2.textContent = "  Discription: Line2";
+   idDescriptionVideoAudio3.textContent = "  Discription: Line3";
+   idDescriptionVideoAudio4.textContent = "  Discription: Line4";
+
    idelementsVideoAudio.src = "Video/Flag.mp4";
 
    button15.style.visibility = "visible";
@@ -562,7 +580,11 @@ function DocumentsDisplay() {
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
   if(VideoAudioTextButton.style.opacity == "1") {
-   idDescriptionVideoAudio.textContent = "  Documents Discription";
+   idDescriptionVideoAudio1.textContent = "  Documents Discription";
+   idDescriptionVideoAudio2.textContent = "  Discription: Line2";
+   idDescriptionVideoAudio3.textContent = "  Discription: Line3";
+   idDescriptionVideoAudio4.textContent = "  Discription: Line4";
+
    idelementsVideoAudio.src = "Video/Jeremia1-5.mp4";
 
    button15.style.visibility = "visible";
@@ -690,7 +712,11 @@ function FilingWillDisplay() {
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
   if(VideoAudioTextButton.style.opacity == "1") {
-   idDescriptionVideoAudio.textContent = "  Filing Will Discription";
+   idDescriptionVideoAudio1.textContent = "  Filing Will Discription";
+   idDescriptionVideoAudio2.textContent = "  Discription: Line2";
+   idDescriptionVideoAudio3.textContent = "  Discription: Line3";
+   idDescriptionVideoAudio4.textContent = "  Discription: Line4";
+
    idelementsVideoAudio.src = "Video/Flag.mp4";
 
    button15.style.visibility = "visible";
@@ -821,7 +847,11 @@ function BankDisplay() {
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
   if(VideoAudioTextButton.style.opacity == "1") {
-   idDescriptionVideoAudio.textContent = "  Bank Discription";
+   idDescriptionVideoAudio1.textContent = "  Bank Discription";
+   idDescriptionVideoAudio2.textContent = "  Discription: Line2";
+   idDescriptionVideoAudio3.textContent = "  Discription: Line3";
+   idDescriptionVideoAudio4.textContent = "  Discription: Line4";
+
    idelementsVideoAudio.src = "Video/Jeremia1-5.mp4";
 
    button15.style.visibility = "visible";
@@ -950,7 +980,11 @@ function NotificationsDisplay() {
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
   if(VideoAudioTextButton.style.opacity == "1") {
-   idDescriptionVideoAudio.textContent = "  Notifications Discription";
+   idDescriptionVideoAudio1.textContent = "  Notifications Discription";
+   idDescriptionVideoAudio2.textContent = "  Discription: Line2";
+   idDescriptionVideoAudio3.textContent = "  Discription: Line3";
+   idDescriptionVideoAudio4.textContent = "  Discription: Line4";
+
    idelementsVideoAudio.src = "Video/Flag.mp4";
 
    button15.style.visibility = "visible";
@@ -1078,7 +1112,11 @@ function IncomeDisplay() {
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
   if(VideoAudioTextButton.style.opacity == "1") {
-   idDescriptionVideoAudio.textContent = "  Income Discription";
+   idDescriptionVideoAudio1.textContent = "  Income Discription";
+   idDescriptionVideoAudio2.textContent = "  Discription: Line2";
+   idDescriptionVideoAudio3.textContent = "  Discription: Line3";
+   idDescriptionVideoAudio4.textContent = "  Discription: Line4";
+
    idelementsVideoAudio.src = "Video/Jeremia1-5.mp4";
 
    button15.style.visibility = "visible";
@@ -1207,7 +1245,11 @@ function ExpensesDisplay() {
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
   if(VideoAudioTextButton.style.opacity == "1") {
-   idDescriptionVideoAudio.textContent = "  Expenses Discription";
+   idDescriptionVideoAudio1.textContent = "  Expenses Discription";
+   idDescriptionVideoAudio2.textContent = "  Discription: Line2";
+   idDescriptionVideoAudio3.textContent = "  Discription: Line3";
+   idDescriptionVideoAudio4.textContent = "  Discription: Line4";
+
    idelementsVideoAudio.src = "Video/Flag.mp4";
 
    button15.style.visibility = "visible";
@@ -1336,7 +1378,11 @@ function TaxPreparerDisplay() {
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
   if(VideoAudioTextButton.style.opacity == "1") {
-   idDescriptionVideoAudio.textContent = "  Tax Preparer Discription";
+   idDescriptionVideoAudio1.textContent = "  Tax Preparer Discription";
+   idDescriptionVideoAudio2.textContent = "  Discription: Line2";
+   idDescriptionVideoAudio3.textContent = "  Discription: Line3";
+   idDescriptionVideoAudio4.textContent = "  Discription: Line4";
+
    idelementsVideoAudio.src = "Video/Jeremia1-5.mp4";
 
    button15.style.visibility = "visible";
@@ -1465,7 +1511,11 @@ function EstateAttoneyDisplay() {
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
   if(VideoAudioTextButton.style.opacity == "1") {
-   idDescriptionVideoAudio.textContent = "  Estate Attorney Discription";
+   idDescriptionVideoAudio1.textContent = "  Estate Attorney Discription";
+   idDescriptionVideoAudio2.textContent = "  Discription: Line2";
+   idDescriptionVideoAudio3.textContent = "  Discription: Line3";
+   idDescriptionVideoAudio4.textContent = "  Discription: Line4";
+
    idelementsVideoAudio.src = "Video/Flag.mp4";
 
    button15.style.visibility = "visible";
@@ -1592,7 +1642,11 @@ function ProbateDisplay() {
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
   if(VideoAudioTextButton.style.opacity == "1") {
-   idDescriptionVideoAudio.textContent = "  Probate Discription";
+   idDescriptionVideoAudio1.textContent = "  Probate Discription";
+   idDescriptionVideoAudio2.textContent = "  Discription: Line2";
+   idDescriptionVideoAudio3.textContent = "  Discription: Line3";
+   idDescriptionVideoAudio4.textContent = "  Discription: Line4";
+
    idelementsVideoAudio.src = "Video/Jeremia1-5.mp4";
 
    button15.style.visibility = "visible";
@@ -1723,7 +1777,11 @@ function PropertyDisplay() {
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
   if(VideoAudioTextButton.style.opacity == "1") {
-   idDescriptionVideoAudio.textContent = "  Property Discription";
+   idDescriptionVideoAudio1.textContent = "  Property Discription";
+   idDescriptionVideoAudio2.textContent = "  Discription: Line2";
+   idDescriptionVideoAudio3.textContent = "  Discription: Line3";
+   idDescriptionVideoAudio4.textContent = "  Discription: Line4";
+
    idelementsVideoAudio.src = "Video/Flag.mp4";
 
    button15.style.visibility = "visible";
@@ -1854,7 +1912,11 @@ function SecurityDisplay() {
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
   if(VideoAudioTextButton.style.opacity == "1") {
-   idDescriptionVideoAudio.textContent = "  Security Discription";
+   idDescriptionVideoAudio1.textContent = "  Security Discription";
+   idDescriptionVideoAudio2.textContent = "  Discription: Line2";
+   idDescriptionVideoAudio3.textContent = "  Discription: Line3";
+   idDescriptionVideoAudio4.textContent = "  Discription: Line4";
+
    idelementsVideoAudio.src = "Video/Jeremia1-5.mp4";
 
    button15.style.visibility = "visible";
