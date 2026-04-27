@@ -201,12 +201,12 @@ function clickaboutDisplay() {
   VideoAudioTextButton.style.opacity = "1";
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
-  idDescriptionVideoAudio1.textContent = " Welcome to End Of Life Planner for Vincent J. McElwee";
-  idDescriptionVideoAudio2.textContent = " Welcome to End Of Life Planner for Vincent J. McElwee";
-  idDescriptionVideoAudio3.textContent = " Welcome to End Of Life Planner for Vincent J. McElwee";
-  idDescriptionVideoAudio4.textContent = " Welcome to End Of Life Planner for Vincent J. McElwee";
+  idDescriptionVideoAudio1.textContent = " Welcome to the End Of Life Planner.";
+  idDescriptionVideoAudio2.textContent = " First a quick 6 second AI generated video.";
+  idDescriptionVideoAudio3.textContent = " Next a quick demonstration video of the web page.";
+  idDescriptionVideoAudio4.textContent = " The total elapsed time for this video is 1.45 minutes.";
 
-  idelementsVideoAudio.src = "Video/Flag.mp4";
+  idelementsVideoAudio.src = "Video/AboutWelcomeDemo.mp4";
 
   button15.style.visibility = "visible";
   btnGT15.style.visibility = "visible";
