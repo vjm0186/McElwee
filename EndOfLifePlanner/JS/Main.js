@@ -321,10 +321,10 @@ function clickPrepaidFuneralDisplay() {
   btnGT02.style.visibility = "hidden";
 
   /* Begin Add Video/Audio */
-  VideoAudioTextButton.style.opacity = "1";
-  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButton.style.opacity = "0";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "0";
 
-  if(VideoAudioTextButton.style.opacity == "1") {
+  if(VideoAudioTextButton.style.opacity == "0") {
    idDescriptionVideoAudio1.textContent = "  Prepaid Funeral Discription";
    idDescriptionVideoAudio2.textContent = "  Discription: Line2";
    idDescriptionVideoAudio3.textContent = "  Discription: Line3";
@@ -450,10 +450,10 @@ function EntombmentDisplay() {
   btnGT03.style.visibility = "hidden";
 
   /* Begin Add Video/Audio */
-  VideoAudioTextButton.style.opacity = "1";
-  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButton.style.opacity = "0";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "0";
 
-  if(VideoAudioTextButton.style.opacity == "1") {
+  if(VideoAudioTextButton.style.opacity == "0") {
    idDescriptionVideoAudio1.textContent = "  Entombment Discription";
    idDescriptionVideoAudio2.textContent = "  Discription: Line2";
    idDescriptionVideoAudio3.textContent = "  Discription: Line3";
@@ -1642,12 +1642,12 @@ function ProbateDisplay() {
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
   if(VideoAudioTextButton.style.opacity == "1") {
-   idDescriptionVideoAudio1.textContent = "  Probate Discription";
-   idDescriptionVideoAudio2.textContent = "  Discription: Line2";
-   idDescriptionVideoAudio3.textContent = "  Discription: Line3";
-   idDescriptionVideoAudio4.textContent = "  Discription: Line4";
+   idDescriptionVideoAudio1.textContent = "  Audio only - Using my Last Will and Testament and Pour-Over";
+   idDescriptionVideoAudio2.textContent = "  Trust with the Florida Probate Rules for 2026 (a 414-page PDF";
+   idDescriptionVideoAudio3.textContent = "  document) was imported to an AI program (NotebookLM) that";
+   idDescriptionVideoAudio4.textContent = "  Generated a 20.01 minute podcast.";
 
-   idelementsVideoAudio.src = "Video/Jeremia1-5.mp4";
+   idelementsVideoAudio.src = "Audio/FloridaProbateRules.m4a";
 
    button15.style.visibility = "visible";
    btnGT15.style.visibility = "visible";
