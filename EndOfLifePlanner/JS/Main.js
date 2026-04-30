@@ -576,10 +576,10 @@ function DocumentsDisplay() {
   btnGT04.style.visibility = "hidden";
 
   /* Begin Add Video/Audio */
-  VideoAudioTextButton.style.opacity = "1";
-  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButton.style.opacity = "0";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "0";
 
-  if(VideoAudioTextButton.style.opacity == "1") {
+  if(VideoAudioTextButton.style.opacity == "0") {
    idDescriptionVideoAudio1.textContent = "  Documents Discription";
    idDescriptionVideoAudio2.textContent = "  Discription: Line2";
    idDescriptionVideoAudio3.textContent = "  Discription: Line3";
@@ -708,10 +708,10 @@ function FilingWillDisplay() {
   btnGT05.style.visibility = "hidden";
 
   /* Begin Add Video/Audio */
-  VideoAudioTextButton.style.opacity = "1";
-  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButton.style.opacity = "0";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "0";
 
-  if(VideoAudioTextButton.style.opacity == "1") {
+  if(VideoAudioTextButton.style.opacity == "0") {
    idDescriptionVideoAudio1.textContent = "  Filing Will Discription";
    idDescriptionVideoAudio2.textContent = "  Discription: Line2";
    idDescriptionVideoAudio3.textContent = "  Discription: Line3";
@@ -843,10 +843,10 @@ function BankDisplay() {
   btnGT06.style.visibility = "hidden";
 
   /* Begin Add Video/Audio */
-  VideoAudioTextButton.style.opacity = "1";
-  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButton.style.opacity = "0";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "0";
 
-  if(VideoAudioTextButton.style.opacity == "1") {
+  if(VideoAudioTextButton.style.opacity == "0") {
    idDescriptionVideoAudio1.textContent = "  Bank Discription";
    idDescriptionVideoAudio2.textContent = "  Discription: Line2";
    idDescriptionVideoAudio3.textContent = "  Discription: Line3";
@@ -976,10 +976,10 @@ function NotificationsDisplay() {
   btnGT07.style.visibility = "hidden";
 
   /* Begin Add Video/Audio */
-  VideoAudioTextButton.style.opacity = "1";
-  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButton.style.opacity = "0";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "0";
 
-  if(VideoAudioTextButton.style.opacity == "1") {
+  if(VideoAudioTextButton.style.opacity == "0") {
    idDescriptionVideoAudio1.textContent = "  Notifications Discription";
    idDescriptionVideoAudio2.textContent = "  Discription: Line2";
    idDescriptionVideoAudio3.textContent = "  Discription: Line3";
@@ -1108,10 +1108,10 @@ function IncomeDisplay() {
   btnGT08.style.visibility = "hidden";
 
   /* Begin Add Video/Audio */
-  VideoAudioTextButton.style.opacity = "1";
-  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButton.style.opacity = "0";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "0";
 
-  if(VideoAudioTextButton.style.opacity == "1") {
+  if(VideoAudioTextButton.style.opacity == "0") {
    idDescriptionVideoAudio1.textContent = "  Income Discription";
    idDescriptionVideoAudio2.textContent = "  Discription: Line2";
    idDescriptionVideoAudio3.textContent = "  Discription: Line3";
@@ -1241,10 +1241,10 @@ function ExpensesDisplay() {
   btnGT09.style.visibility = "hidden";
 
   /* Begin Add Video/Audio */
-  VideoAudioTextButton.style.opacity = "1";
-  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButton.style.opacity = "0";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "0";
 
-  if(VideoAudioTextButton.style.opacity == "1") {
+  if(VideoAudioTextButton.style.opacity == "0") {
    idDescriptionVideoAudio1.textContent = "  Expenses Discription";
    idDescriptionVideoAudio2.textContent = "  Discription: Line2";
    idDescriptionVideoAudio3.textContent = "  Discription: Line3";
@@ -1374,10 +1374,10 @@ function TaxPreparerDisplay() {
   btnGT10.style.visibility = "hidden";
 
   /* Begin Add Video/Audio */
-  VideoAudioTextButton.style.opacity = "1";
-  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButton.style.opacity = "0";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "0";
 
-  if(VideoAudioTextButton.style.opacity == "1") {
+  if(VideoAudioTextButton.style.opacity == "0") {
    idDescriptionVideoAudio1.textContent = "  Tax Preparer Discription";
    idDescriptionVideoAudio2.textContent = "  Discription: Line2";
    idDescriptionVideoAudio3.textContent = "  Discription: Line3";
@@ -1507,10 +1507,10 @@ function EstateAttoneyDisplay() {
   btnGT11.style.visibility = "hidden";
 
   /* Begin Add Video/Audio */
-  VideoAudioTextButton.style.opacity = "1";
-  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButton.style.opacity = "0";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "0";
 
-  if(VideoAudioTextButton.style.opacity == "1") {
+  if(VideoAudioTextButton.style.opacity == "0") {
    idDescriptionVideoAudio1.textContent = "  Estate Attorney Discription";
    idDescriptionVideoAudio2.textContent = "  Discription: Line2";
    idDescriptionVideoAudio3.textContent = "  Discription: Line3";
@@ -1773,10 +1773,10 @@ function PropertyDisplay() {
   btnGT13.style.visibility = "hidden";
 
   /* Begin Add Video/Audio */
-  VideoAudioTextButton.style.opacity = "1";
-  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButton.style.opacity = "0";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "0";
 
-  if(VideoAudioTextButton.style.opacity == "1") {
+  if(VideoAudioTextButton.style.opacity == "0") {
    idDescriptionVideoAudio1.textContent = "  Property Discription";
    idDescriptionVideoAudio2.textContent = "  Discription: Line2";
    idDescriptionVideoAudio3.textContent = "  Discription: Line3";
@@ -1908,10 +1908,10 @@ function SecurityDisplay() {
   btnGT14.style.visibility = "hidden";
 
   /* Begin Add Video/Audio */
-  VideoAudioTextButton.style.opacity = "1";
-  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButton.style.opacity = "0";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "0";
 
-  if(VideoAudioTextButton.style.opacity == "1") {
+  if(VideoAudioTextButton.style.opacity == "0") {
    idDescriptionVideoAudio1.textContent = "  Security Discription";
    idDescriptionVideoAudio2.textContent = "  Discription: Line2";
    idDescriptionVideoAudio3.textContent = "  Discription: Line3";
