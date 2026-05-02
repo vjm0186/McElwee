@@ -1,0 +1,23 @@
+About.txt
+
+Date/Time/Weight/Place of Birth
+
+Date:      Saturday, February 21, 1948 
+Time:      8:44 AM
+Weight:  6 lb 4 oz
+Place:     George E.Geisinger Memorial Hospital
+               Danville, Pennsylvania
+
+Residences Past to present:
+
+  1. Mount Carmel, Pennsylvania
+  2. Gloucester City, New Jersey
+  3. Fort Dix, New Jersey
+  4. Fort Lee, Virginia
+  5. Bien Hoa, Vietnam
+  6. Fort Lewis, Washington
+  7. Stuttgart, Germany
+  8. Trenton, New Jersey
+  9. Glen Ellyn, Illinois
+10. Seminole, Florida
+

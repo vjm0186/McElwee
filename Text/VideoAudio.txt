@@ -1,0 +1,26 @@
+VideoAudio.txt
+
+Revision:  04/24/2026
+Start:     04/12/2026
+
+. Make 3 HTML <pre id="descriptionVideoAudio">Hello World</pre>
+  for a more descriptive Video/Audio presentation.
+
+. Mdify the Javascript file to handle descriptions line above.
+
+. Window+Shift+S = Snipping Tool to record the Video/Audio also use
+  ZoomIt for screen annotation during the Snipping recording.
+
+     C:\McElwee\ZoomIT
+
+. Review the AboutVideoAudio.txt file to do the recording.
+
+--------------------------------------------------------------------
+Test buttons and their video/Audio.
+Review content in the HTML.
+Consider which button will need a Video/Audio file.
+Post to a web site.
+
+04/22/2026 - Changed HTML text on some the buttons.
+04/21/2026 - Coding completed.
+
