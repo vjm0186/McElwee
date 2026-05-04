@@ -7,6 +7,15 @@
     color: #000000;
 }
 
+html {
+/* 10px */
+    font-size: 62.5%;
+}
+
+body {
+    margin-left: 20px;
+}
+
 button {
     width: 160px;
     height: 30px;
@@ -19,6 +28,16 @@ button {
     align-items: center;
     outline: none;
     cursor: pointer;
+}
+
+.containerPage {
+    width: 880px;
+    height: 1100px;
+    border-style: solid;
+    border-color:  #f3132b;
+    border-width: 2px;
+    border-radius: 10px; 
+    border-bottom: none;
 }
 
 #ProductionDate {
@@ -61,7 +80,7 @@ button {
     color: blue;
     margin: 5px;
     text-align: center;
-    font-size: 40px;
+    font-size: 38px;
 }
 
 .ImageHeaderRight {
@@ -138,7 +157,7 @@ button {
     position: absolute;
     width: 600px;
     height: 500px;
-    font-size: 25px; 
+    font-size: 20px; 
     margin-left: 50px;
     margin-bottom: 50px;
     visibility: hidden;
@@ -177,7 +196,7 @@ button {
     margin-bottom: 25px;
     visibility: hidden;
     font-size: 20px; 
-    margin-left: 50px;
+    margin-left: 10px;
  }
 
  .containerBank {
@@ -197,9 +216,12 @@ button {
     margin-bottom: 25px;
     visibility: hidden;
     font-size: 20px; 
-    margin-left: 15px; 
+    margin-left: 20px; 
  }
 
+.NotificationsItems {
+    margin-left: 20px; 
+}
  .containerIncome {
     position: absolute;
     width: 600px;
@@ -250,8 +272,8 @@ button {
     width: 600px;
     height: 500px;
     visibility: hidden;
-    font-size: 23px; 
-    margin-left: 15px;  
+    font-size: 19px; 
+    margin-left: 2px;  
  }
 
  .containerSecurity {
