@@ -196,7 +196,6 @@ function clickaboutDisplay() {
   btnGT01.style.visibility = "hidden";
   AboutText.style.visibility = "visible";
   
-
   /* Begin Add Video/Audio */
   VideoAudioTextButton.style.opacity = "1";
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
@@ -577,7 +576,7 @@ function DocumentsDisplay() {
 
   /* Begin Add Video/Audio */
   VideoAudioTextButton.style.opacity = "0";
-  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "0";
+  VideoAudioTextButtonOpacity = VideoAudioTextButton.style.opacity = "0";
 
   if(VideoAudioTextButton.style.opacity == "0") {
    idDescriptionVideoAudio1.textContent = "  Documents Discription";
@@ -708,21 +707,20 @@ function FilingWillDisplay() {
   btnGT05.style.visibility = "hidden";
 
   /* Begin Add Video/Audio */
-  VideoAudioTextButton.style.opacity = "0";
-  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "0";
+  VideoAudioTextButton.style.opacity = "1";
+  VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
-  if(VideoAudioTextButton.style.opacity == "0") {
-   idDescriptionVideoAudio1.textContent = "  Filing Will Discription";
-   idDescriptionVideoAudio2.textContent = "  Discription: Line2";
-   idDescriptionVideoAudio3.textContent = "  Discription: Line3";
-   idDescriptionVideoAudio4.textContent = "  Discription: Line4";
+  if(VideoAudioTextButton.style.opacity = "1") {
+   idDescriptionVideoAudio1.textContent = "  Audio 3.02 minutes";
+   idDescriptionVideoAudio2.textContent = "  Last Will and Testament filing and Probate";
+   idDescriptionVideoAudio3.textContent = "  Florida rules requirements for Filing (Deposited)";
+   idDescriptionVideoAudio4.textContent = "  with the Clerk of the Circuit Court";
 
-   idelementsVideoAudio.src = "Video/Flag.mp4";
+   idelementsVideoAudio.src = "Audio/LastWillAndTestamentFilingAndProbate.mp3";
 
    button15.style.visibility = "visible";
    btnGT15.style.visibility = "visible";
    /* End Add Video/Audio */
-
   };
  
   button01Active = false;
