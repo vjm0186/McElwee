@@ -711,7 +711,7 @@ function FilingWillDisplay() {
   VideoAudioTextButtonOpacity =  VideoAudioTextButton.style.opacity = "1";
 
   if(VideoAudioTextButton.style.opacity = "1") {
-   idDescriptionVideoAudio1.textContent = "  Audio 3.02 minutes";
+   idDescriptionVideoAudio1.textContent = "  Audio only - 2.58 minutes";
    idDescriptionVideoAudio2.textContent = "  Last Will and Testament filing and Probate";
    idDescriptionVideoAudio3.textContent = "  Florida rules requirements for Filing (Deposited)";
    idDescriptionVideoAudio4.textContent = "  with the Clerk of the Circuit Court";
