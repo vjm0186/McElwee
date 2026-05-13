@@ -31,7 +31,7 @@ button {
 }
 
 .containerPage {
-    width: 880px;
+    width: 830px;
     height: 1100px;
     border-style: solid;
     border-color:  #f3132b;
@@ -80,7 +80,8 @@ button {
     color: blue;
     margin: 5px;
     text-align: center;
-    font-size: 38px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .ImageHeaderRight {
@@ -145,7 +146,7 @@ button {
 
 .containerAbout {
     position: absolute;
-    width: 600px;
+    width: 400px;
     height: 500px;
     font-size: 20px; 
     margin-left: 50px;
@@ -155,7 +156,7 @@ button {
 
 .containerPrepaidFuneral {
     position: absolute;
-    width: 600px;
+    width: 400px;
     height: 500px;
     font-size: 20px; 
     margin-left: 50px;
@@ -165,7 +166,7 @@ button {
 
 .containerEntombment {
     position: absolute;
-    width: 600px;
+    width: 400px;
     height: 500px;
     font-size: 25px; 
     margin-left: 50px;
@@ -175,7 +176,7 @@ button {
 
  .containerDocuments {
     position: absolute;
-    width: 600px;
+    width: 400px;
     height: 500px;
     margin-bottom: 25px;
     visibility: hidden;
@@ -185,13 +186,13 @@ button {
 
  .HeaderDocuments {
     font-size: 20px; 
-    font-weight: normal:
+    font-weight: normal;
     /* margin-left: 50px; */
  }
 
  .containerFilingWill {
     position: absolute;
-    width: 600px;
+    width: 400px;
     height: 500px;
     margin-bottom: 25px;
     visibility: hidden;
@@ -201,7 +202,7 @@ button {
 
  .containerBank {
     position: absolute;
-    width: 600px;
+    width: 400px;
     height: 500px;
     margin-bottom: 25px;
     visibility: hidden;
@@ -211,7 +212,7 @@ button {
 
  .containerNotifications {
     position: absolute;
-    width: 600px;
+    width: 400px;
     height: 500px;
     margin-bottom: 25px;
     visibility: hidden;
@@ -224,7 +225,7 @@ button {
 }
  .containerIncome {
     position: absolute;
-    width: 600px;
+    width: 400px;
     height: 500px;
     visibility: hidden;
     font-size: 20px; 
@@ -233,7 +234,7 @@ button {
 
  .containerExpenses {
     position: absolute;
-    width: 600px;
+    width: 400px;
     height: 500px;
     visibility: hidden;
     font-size: 20px; 
@@ -242,7 +243,7 @@ button {
 
  .containerTaxPreparer {
     position: absolute;
-    width: 600px;
+    width: 400px;
     height: 500px;
     visibility: hidden;
     font-size: 23px; 
@@ -251,7 +252,7 @@ button {
 
  .containerEstateAttoney {
     position: absolute;
-    width: 600px;
+    width: 400px;
     height: 500px;
     visibility: hidden;
     font-size: 23px; 
@@ -260,7 +261,7 @@ button {
 
  .containerProbate {
     position: absolute;
-    width: 600px;
+    width: 400px;
     height: 500px;
     visibility: hidden;
     font-size: 23px; 
@@ -269,7 +270,7 @@ button {
 
  .containerProperty {
     position: absolute;
-    width: 600px;
+    width: 400px;
     height: 500px;
     visibility: hidden;
     font-size: 19px; 
@@ -278,7 +279,7 @@ button {
 
  .containerSecurity {
     position: absolute;
-    width: 600px;
+    width: 400px;
     height: 500px;
     visibility: hidden;
     font-size: 23px; 
