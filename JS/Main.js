@@ -2366,8 +2366,6 @@ function clickExitDisplay() {
   console.log(" ");
   console.log("End clickExitDisplay");
 
-  /* alert("End clickExitDisplay"); */
-
   /* End iPhone Close */
 
 };
