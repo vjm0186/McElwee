@@ -2337,8 +2337,36 @@ function blurVideoAudioNoDisplay() {
 
 /* Begin Exit Functions */
 function clickExitDisplay() {
+
+  console.log(" ");
+  console.log("Begin clickExitDisplay");
   
+  console.log(" ");
+  console.log("window.history.length = " + window.history.length);
+ 
   window.close();
+
+  /* Begin iPhone Close */
+  console.log(" ");
+  console.log("Begin iPhone Close");
+  console.log(" ");
+
+  console.log("window.history.length = " + window.history.length);
+  console.log(" ");
+
+  if (window.history.length > 1) {
+    history.back();
+  };
+
+  console.log(" ");
+  console.log("End iPhone Close");
+
+  console.log(" ");
+  console.log("End clickExitDisplay");
+
+  alert("End clickExitDisplay");
+
+  /* End iPhone Close */
 
 };
 
