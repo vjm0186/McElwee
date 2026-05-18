@@ -2354,6 +2354,8 @@ function clickExitDisplay() {
   console.log("window.history.length = " + window.history.length);
   console.log(" ");
 
+  window.location.replace('goodbye.html');
+
   if (window.history.length > 1) {
     history.back();
   };
@@ -2364,7 +2366,7 @@ function clickExitDisplay() {
   console.log(" ");
   console.log("End clickExitDisplay");
 
-  alert("End clickExitDisplay");
+  /* alert("End clickExitDisplay"); */
 
   /* End iPhone Close */
 
